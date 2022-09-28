@@ -178,5 +178,55 @@
       "image":"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1661742747_1661696105_fireworks_1953253_1920.jpg",
       "by": "Arhi"
     }
+  ],
+  "trip": [
+    {
+      "id": 1,
+      "title": "From Istanbul to Cappadocia: How To Experience Turkey's Balloon-Filled Skies And Artistic Treasures",
+      "image":"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1664283239_1491999123_screen_shot_2017_04_12_at_5_41_22_pm.png",
+      "by": "Tripoto"
+    },
+    {
+      "id": 2,
+      "title": "While Sara Ali Khan's Photos Are Buzzing on Instagram, Here's Exploring Istanbul Beyond Hagia Sofia",
+      "image":"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1664283413_img_20220521_092519.jpg",
+      "by": "Riyanka Roy"
+    },
+    {
+      "id":3 ,
+      "title": "I Visited Bali Four Times and Here Are My 11 Reasons Why It Should Be On Your Travel Radar For 2022!",
+      "image":"https://static2.tripoto.com/media/filter/nl/img/245847/TripDocument/1638782394_slide_7.jpg",
+      "by": "Kadambari Bhatte (curlytravelmess)"
+    },
+    {
+      "id":4 ,
+      "title": "Here Is The Only Travel Guide To Vietnam You'll Need",
+      "image":"https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1661938437_img_0927_min.jpg",
+      "by": "Prageet Goel"
+    },
+    {
+      "id":5,
+      "title": "Head To This Kaleidoscopic Volcanic Lake In Indonesia Instead",
+      "image":"https://static2.tripoto.com/media/filter/nl/img/1727/TripDocument/1499420095_800px_kawah_ijen_ijen_crater_7540434086.jpg",
+      "by": "Pritha Puri"
+    },
+    {
+      "id":6,
+      "title": "These Offbeat Places In Europe Are Perfect For The Summers",
+      "image":"https://static2.tripoto.com/media/filter/nl/img/80475/TripDocument/1493707507_15798144758_5a93457ae4_o.jpg",
+      "by": "Sumedha Bharpilania"
+    },
+    {
+      "id":7,
+      "title": "Why Serbia Should be Your Next International Destination. P.S. No Visa Needed",
+      "image":"https://static2.tripoto.com/media/filter/nl/img/815318/TripDocument/1545558276_erdap_2129568_1280.jpg",
+      "by": "Ayushee Chaudhary"
+    },
+    {
+      "id":8,
+      "title": "Visa-On-Arival In Dubai For Indians! Here's Everything You Need To Know About The Gulf Paradise",
+      "image":"https://static2.tripoto.com/media/filter/nl/img/1789711/TripDocument/1638860409_photo_1459600661907_3c72c54955de.jpeg",
+      "by": "Tripoto"
+    }
   ]
 }
