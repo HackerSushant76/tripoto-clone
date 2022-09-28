@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#banner {
+  width: 100%;
+  height: 340px;
+}
+
+#luftansa{
+    border: 1px solid;
+    height: 250px;
+    width: 55%;
+    margin: auto;
+    background-color: rgb(88, 88, 76);
+    margin-bottom: 5%;
+}
+
+/* Home1 */
+
+#home1_A{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    /* border: 1px solid; */
+    align-items: center;
+    width: 75%;
+}
+
+#home1_A img{
+    height: 65px;
+    border: 1px solid silver;
+}
+
+#partnerships{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* width: 90%; */
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+}
+
+#partnerships img{
+    height: 170px;
+    width: 95%;
+    border-radius: 10px;
+}
+
+/* #home1_A{
+    border: 1px solid;
+} */
+
+
+#home1_B{
+    /* border: 1px solid; */
+    width: 75%;
+    margin: auto;
+}
+
+#tourism{
+    width: 75%;
+    margin: auto;
+    
+}
+
+#tourism > img{
+    border-radius: 10px;    
+}
+
+#tourism_B{
+    display: flex;
+    width: 75%;
+    margin: auto;
+}
+
+
+#tourism_B > div:nth-child(1) > img{
+    height: 40vh;
+    width:  95%;
+}
+
+#tourism_B > div:nth-child(2) >img{
+    height: 40vh;
+    width: 95%;
+}
