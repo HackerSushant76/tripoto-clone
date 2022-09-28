@@ -1,11 +1,11 @@
+import Singapore from "./components/singapore/Singapore";
 
 function App() {
-  return (
-    
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  );
-}
+  return(
+   <Singapore/>
+  )
+   
+  
+};
 
 export default App;
