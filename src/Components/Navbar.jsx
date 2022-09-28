@@ -3,6 +3,7 @@ import { Box, Button, Heading, Menu, MenuButton, MenuItem, MenuList } from "@cha
 
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import Signin from "./Signin";
 
 export function Navbar() {
   return (
@@ -11,24 +12,24 @@ export function Navbar() {
         <NavLink to="/">Home</NavLink>
       </Box>
       <Box>
-        <NavLink to="/inspirations">
+        {/* <NavLink to="/inspirations"> */}
           <Menu>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+            <MenuButton as={Box} >
               Inspiration
             </MenuButton>
-            <MenuList>
-              <MenuItem>Download</MenuItem>
-              <MenuItem>Create a Copy</MenuItem>
+            <MenuList color="black"  width="30px" fontSize="14px" >
+              <MenuItem>Visit Singapore</MenuItem>
+              <MenuItem>Beaches</MenuItem>
               <MenuItem>Mark as Draft</MenuItem>
               <MenuItem>Delete</MenuItem>
               <MenuItem>Attend a Workshop</MenuItem>
             </MenuList>
           </Menu>
-        </NavLink>
+        {/* </NavLink> */}
         <NavLink to="/forum">Forum</NavLink>
         <NavLink to="/packages">Packages</NavLink>
         <NavLink to="/publish">Publish trip</NavLink>
-        <NavLink to="/signin">Signin</NavLink>
+        <Signin/>
       </Box>
     </Box>
   );

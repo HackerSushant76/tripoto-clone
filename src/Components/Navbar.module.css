@@ -5,8 +5,9 @@
     justify-content:space-between;
     padding-left: 30px;
     padding-right: 50px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
 }
 #navbar>div{
     display: flex;
