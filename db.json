@@ -258,5 +258,95 @@
         "by": "Sonalika Debnath",
         "stays":"Luxury Stays"
       }
+    ],
+    "bookhotels": [
+      {
+        "id": 1,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660666126_image_covera.jpg",
+        "title": "Explore Auroville On A Cycle And Learn The Art Of Kalaripayattu | Beyond Community, Auroville",
+        "place": "Auroville",
+        "cost": "6,700",
+        "days": "3 Days 2 Nights"
+      },
+      {
+        "id": 2,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg",
+        "title": "Learn Sketching & Go On Guided Forest Walks Around The Himalayan Trails |Cosmic Geeks, Dharamkot",
+        "place": "Himachal Pradesh",
+        "cost": "8,300",
+        "days": "4 Days 3 Nights"
+      },
+      {
+        "id": 3,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1638778652_image_cover_b.jpg",
+        "title": "Learn To Cook A Traditional Rajasthani Meal At A 200 Year-Old Luxury Haveli",
+        "place": "Raiasthan",
+        "cost": "3,799",
+        "days": "2 Days 2 Nights"
+      },
+      {
+        "id": 4,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654504108_ce_c1.jpg",
+        "title": "Trek To Triund And Stay At The Residence Of Kangra's Maharaja | Clouds End Villa,Dharamshala",
+        "place": "Dharamshala",
+        "cost": "13,750",
+        "days": "2 Days 1 Nights"
+      },
+      {
+        "id": 5,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645772836_image_cover.jpg",
+        "title": "Stargaze & Enjoy A Picnic In The Hills As You Stay At A Unique A- Framed Cottage| Urna Boutique Stay",
+        "place": "Mukteshwar",
+        "cost": "6,899",
+        "days": "3 Days 4 Nights"
+      },
+      {
+        "id": 6,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657734830_image_cover_a.jpg",
+        "title": "Explore One Of Asia's Spookiest Spots While Unwinding Amidst Naturel Seegreen Lodges, Mussoorie",
+        "place": "Mussoorie",
+        "cost": "7,500",
+        "days": "4 Days 3 Nights"
+      },
+      {
+        "id": 7,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653391344_ln_c1.jpg",
+        "title": "Explore An Artist's Estate & Stay In A Kathkuni Home Hidden In Manali's Forests INORTH",
+        "place": "Manali",
+        "cost": "9,850",
+        "days": "4 Days 5 Nights"
+      },
+      {
+        "id": 8,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2163002/Image/1640323403_image_cover_b.jpg",
+        "title": "Learn Yoga While Unwinding Amidst Nature & Hike To A Gorgeous Waterfall Nature Care Village",
+        "place": "Rishikesh",
+        "cost": "7,520",
+        "days": "5 Days 4 Nights"
+      },
+      {
+        "id": 9,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657204838_omya_img_cover_b.jpg",
+        "title": "Take A Dip In A River And Ride On A Toy Train Amidst Mountains | Omya Forest Camps, Bir",
+        "place": "Bir",
+        "cost": "8,746",
+        "days": "1 Days 2 Nights"
+      },
+      {
+        "id": 10,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645595596_image_cover_b_2.jpg",
+        "title": "Embark On An Adventure With Night Safari& Cycle Safari As You Spot Tigers l Mandaal Corbett",
+        "place": "Ramnagar",
+        "cost": "10,000",
+        "days": "2 Days 1 Nights"
+      },
+      {
+        "id": 11,
+        "img": "https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653394847_nw_c2.jpg",
+        "title": "Stargaze & Pluck Your Own Herbs For Tea At This Kumaoni Retreat | Once Upon A Forest, Hariyal",
+        "place": "Nanital",
+        "cost": "5,199",
+        "days": "3 Days 2 Nights"
+      }
     ]
   }
