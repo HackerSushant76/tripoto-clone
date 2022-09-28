@@ -1,0 +1,15 @@
+#navbar{
+    display: flex;
+    background-color: #2f9bdb;
+    color: white;
+    justify-content:space-between;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+#navbar>div{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
