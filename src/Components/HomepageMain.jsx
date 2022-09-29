@@ -4,6 +4,7 @@ import { ShowContext } from '../Context/ShowContext'
 import "../CSS/Homepage.css"
 import Footer from './Footer'
 import Home1 from './Home1'
+import Middle6Part from './Middle6Part'
 
 const Homepage = () => {
   const { show, setShow } = useContext(ShowContext);
@@ -21,6 +22,7 @@ const Homepage = () => {
            {/* LUFTANSA BANNER  */}
         </Box>
         <Home1/>
+        <Middle6Part/>
         
         <Footer/>
     </div>
