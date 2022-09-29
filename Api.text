@@ -1,4 +1,4 @@
-http://localhost:8080/partnerships
-http://localhost:8080/trip
-http://localhost:8080/india
-http://localhost:8080/hotels
+https://avdhoot-fake-api.herokuapp.com/partnerships
+https://avdhoot-fake-api.herokuapp.com/trip
+https://avdhoot-fake-api.herokuapp.com/india
+https://avdhoot-fake-api.herokuapp.com/hotels
