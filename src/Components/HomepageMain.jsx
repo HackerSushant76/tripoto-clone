@@ -3,6 +3,7 @@ import React from 'react'
 import "../CSS/Homepage.css"
 import Footer from './Footer'
 import Home1 from './Home1'
+import Middle6Part from './Middle6Part'
 
 const Homepage = () => {
 
@@ -19,6 +20,7 @@ const Homepage = () => {
            {/* LUFTANSA BANNER  */}
         </Box>
         <Home1/>
+        <Middle6Part/>
         
         <Footer/>
     </div>
