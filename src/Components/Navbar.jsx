@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import { Box, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
-import {NavLink } from "react-router-dom";
-=======
 import {
   Box,
   Button,
@@ -14,10 +10,8 @@ import {
 import { useEffect } from "react";
 import { useContext } from "react";
 import { useState } from "react";
-
 import { Link, NavLink } from "react-router-dom";
 import { ShowContext } from "../Context/ShowContext";
->>>>>>> main
 import styles from "./Navbar.module.css";
 import Signin from "./Signin";
 
