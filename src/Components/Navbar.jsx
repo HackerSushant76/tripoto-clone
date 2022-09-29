@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Heading,
+  Input,
   Menu,
   MenuButton,
   MenuItem,
@@ -16,17 +17,16 @@ import { ShowContext } from "../Context/ShowContext";
 import styles from "./Navbar.module.css";
 import Signin from "./Signin";
 
-
 export function Navbar() {
   const [color, setColor] = useState(false);
-  const {show,setShow} = useContext(ShowContext)
+  const { show, setShow } = useContext(ShowContext);
   const changeColor = () => {
-    if (window.scrollY > 120) {
+    if (window.scrollY > 100) {
       setColor(true);
-      setShow(true)
+      setShow(true);
     } else {
       setColor(false);
-      setShow(false)
+      setShow(false);
     }
   };
 
@@ -37,10 +37,25 @@ export function Navbar() {
   return (
     <Box
       id={styles.navbar}
-      style={show ? { backgroundColor: "#2f9bdb" , transition:"all 0.5s ease-out"} : {backgroundColor: "transparent" , transition:"all 0.5s ease-out"}}
+      style={
+        show
+          ? { backgroundColor: "#2f9bdb", transition: "all 0.5s ease-out" }
+          : { backgroundColor: "transparent", transition: "all 0.5s ease-out" }
+      }
     >
       <Box>
         <NavLink to="/">Home</NavLink>
+      </Box>
+      <Box>
+        {show && (
+          <Input
+            transition="all 0.5s ease-out"
+            bg="white"
+            placeholder="Search for itineraries, destinations, hotels or activities"
+            width="500px"
+            height="30px"
+          />
+        )}
       </Box>
       <Box>
         {/* <NavLink to="/inspirations"> */}
