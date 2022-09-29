@@ -1,6 +1,7 @@
 import { Box, Input } from '@chakra-ui/react'
 import React from 'react'
 import "../CSS/Homepage.css"
+import Footer from './Footer'
 import Home1 from './Home1'
 
 const Homepage = () => {
@@ -18,6 +19,8 @@ const Homepage = () => {
            {/* LUFTANSA BANNER  */}
         </Box>
         <Home1/>
+        
+        <Footer/>
     </div>
   )
 }

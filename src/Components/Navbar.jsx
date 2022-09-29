@@ -1,7 +1,7 @@
-import { Box, Button, Heading, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { Box, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 
 
-import { Link, NavLink } from "react-router-dom";
+import {NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import Signin from "./Signin";
 
