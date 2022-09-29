@@ -1,6 +1,4 @@
 import { Box, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
-
-
 import {NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import Signin from "./Signin";
