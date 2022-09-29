@@ -1,7 +1,7 @@
-import { Box, Button, Heading, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { Box, Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 
 
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 export function Navbar() {
@@ -13,7 +13,7 @@ export function Navbar() {
       <Box>
         <NavLink to="/inspirations">
           <Menu>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+            <MenuButton as={Button}>
               Inspiration
             </MenuButton>
             <MenuList>
