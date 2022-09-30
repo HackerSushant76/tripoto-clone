@@ -1,6 +1,7 @@
 import { Box, Heading } from "@chakra-ui/react";
 import React from "react";
 import { Carousel } from "./Carousel";
+import Home2 from "./Home2";
 import { Tourism } from "./Tourism";
 import TypeOfTraveller from "./TypeOfTraveller";
 
@@ -66,6 +67,7 @@ const Home_1 = () => {
       <Heading size={"l"}>Check Out Best Hotels and Properties for Every Type of Traveller</Heading>
       <br />
       <TypeOfTraveller/>
+      <Home2/>
     </div>
   );
 };
