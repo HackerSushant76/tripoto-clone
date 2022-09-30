@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import { AllRoutes } from "./Routes/Allroutes";
 import { Navbar } from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import SingleCardPage from "./Components/SingleCardPage";
 
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
       <Navbar />
       <AllRoutes />
       
+       <SingleCardPage/>
+      <Footer />
     </div>
   );
 }
