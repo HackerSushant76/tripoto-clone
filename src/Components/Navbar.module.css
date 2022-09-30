@@ -1,0 +1,25 @@
+#navbar{
+    display: flex;
+    /* background-color: #2f9bdb; */
+    background-color: transparent;
+    color: white;
+    justify-content:space-between;
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    font-size: 14px;
+    z-index: 99;
+}
+#navbar>div{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+/* .navcol{
+    background-color: #2f9bdb;
+    transition-duration: 1sec;
+} */

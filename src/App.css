@@ -1,12 +1,9 @@
 /* .App {
   text-align: center;
-}
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
+<<<<<<< HEAD
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +33,5 @@
     transform: rotate(360deg);
   }
 } */
+=======
+>>>>>>> 6e8a8b03a96abf58f0f10524a4820111817e6544
