@@ -9,33 +9,36 @@ import {IoIosArrowDropleft,IoIosArrowDropright} from "react-icons/io"
 const Crouselbtn = () => {
 
   
-    function SampleNextArrow(props) {
-        const { onClick } = props;
-        return (
-         
-        <IoIosArrowDropright
-          onClick={onClick}
-        style={{fontSize:"35px",color:"rgb(56,159,221)",backgroundColor:"transparent",position:"relative",right:"-15px"}}
-       
-      />
-         
-         
-        );
-      }
-      
-      function SamplePrevArrow(props) {
-        const { onClick } = props;
+  function SampleNextArrow(props) {
+    const { onClick } = props;
+    return (
+      <div  style={{fontSize:"45px",color:"rgb(56,159,221)",backgroundColor:"transparent",position:"absolute",right:"-18px",}}>
+      <IoIosArrowDropright
+           onClick={onClick}
         
-        return (
         
-        <IoIosArrowDropleft
-          onClick={onClick}
-        style={{fontSize:"35px",color:"rgb(56,159,221)",backgroundColor:"transparent",position:"relative",left:"-15px" }}
-       
-      />
-      
-        );
-      }
+       />
+         </div>
+     
+     
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { onClick } = props;
+    
+    return (
+    <div  style={{fontSize:"45px",color:"rgb(56,159,221)",backgroundColor:"transparent" ,position:"absolute",left:"-18px",zIndex:"999"}}>
+ <IoIosArrowDropleft
+      onClick={onClick}
+   
+   
+  />
+    </div>
+   
+  
+    );
+  }
         
   
        let settings = {
@@ -55,7 +58,7 @@ const Crouselbtn = () => {
      <CrouselButtonWrapper>
         <h1>Reimagine Singapore With Tripoto</h1>
         
-        <Slider {...settings}   style={{margin:"auto",alignItems:"center",border:'1px solid green',width:"100%",display:"flex",alignItems:"center",justifyContent:"space-between"}} >
+        <Slider {...settings}  style={{margin:"auto",alignItems:"center",width:"100%",display:"flex"}} >
           
             <div>
               <ButtonSpecialImage src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1663919630_flipbook_button.jpg">
@@ -96,3 +99,5 @@ const Crouselbtn = () => {
 }
 
 export default Crouselbtn;
+
+

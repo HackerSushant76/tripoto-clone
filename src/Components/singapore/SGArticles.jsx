@@ -2,28 +2,37 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
+import {IoIosArrowDropleft,IoIosArrowDropright} from "react-icons/io"
 import { WebseriesWrapper, WeseriesCard } from "../../styles/sgarticles.styled";
 const SGArticles = () => {
   function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
+      <div  style={{fontSize:"45px",color:"rgb(56,159,221)",backgroundColor:"transparent",position:"absolute",right:"-18px",}}>
+      <IoIosArrowDropright
+           onClick={onClick}
+        
+        
+       />
+         </div>
+     
+     
     );
   }
-
+  
   function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
+    
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "green" }}
-        onClick={onClick}
-      />
+    <div  style={{fontSize:"45px",color:"rgb(56,159,221)",backgroundColor:"transparent" ,position:"absolute",left:"-18px",zIndex:"999"}}>
+ <IoIosArrowDropleft
+      onClick={onClick}
+   
+   
+  />
+    </div>
+   
+  
     );
   }
 
@@ -39,14 +48,14 @@ const SGArticles = () => {
   return (
     <WebseriesWrapper>
       <div>
-        <h2> Bookmark these articles before you fly to Singapore</h2>
+        <h1> Bookmark these articles before you fly to Singapore</h1>
         <text>
 The streets and skyscrapers of Singapore inhabit wondrous experiences for travellers. From effervescent bars and exciting restaurants to stores where you can shop to your heart’s delight – here are our top suggestions for a memorable trip in Singapore.
 
  
         </text>
       </div>
-      <Slider {...settings}>
+      <Slider {...settings} style={{margin:"auto",alignItems:"center",width:"100%",display:"flex"}}>
         <WeseriesCard>
           <img src="https://static2.tripoto.com/media/filter/tst/img/279691/SpotDocument/1520606744_1520606739_regent_singapore_gallery_09_restaurant_manhatten.jpg"></img>
           <h3>7 Best Pubs In Singapore For A Stylish Night Out</h3>
@@ -79,9 +88,6 @@ The streets and skyscrapers of Singapore inhabit wondrous experiences for travel
           <h3>Nine Resturants In SG Whose Home Delivered Dishes Will Transport You To The Places You Miss Most!</h3>
           <h5> <span>By</span>Akansha Magan</h5>
         </WeseriesCard>
-
-       
-       
       </Slider>
     </WebseriesWrapper>
   );

@@ -1,10 +1,10 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const WebseriesWrapper = styled.div`
   margin-top:50px;
    margin-bottom:50px;
   h1 {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     font-size: 28px;
     font-weight: 700;
     line-height: 30.8px;
@@ -22,6 +22,13 @@ export const WebseriesWrapper = styled.div`
 
   h5 {
     color: rgb(56, 159, 221);
+    line-height:15px;
+   
+  }
+  h6{
+    color:rgb(255,145,108);
+    font-size:14px;
+    margin-top:4px;
   }
 `;
 
@@ -41,7 +48,7 @@ export const WeseriesCard = styled.div`
   }
   h3{
     font-weight:700;
-
+    margin-bottom:8px;
   }
   h5{
     font-size:16px;

@@ -19,7 +19,7 @@ import Signup from "./Signup";
 import { signOut, onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase-config";
 export function Navbar() {
-
+ 
   const [color, setColor] = useState(false);
   const { show, setShow } = useContext(ShowContext);
 
@@ -55,7 +55,7 @@ export function Navbar() {
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
   }, []);
-  
+   
 
   return (
 

@@ -2,44 +2,56 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
+import {IoIosArrowDropleft,IoIosArrowDropright} from "react-icons/io"
 import { WebseriesWrapper, WeseriesCard } from "../../styles/sgwebseries";
 const SGWebseries = () => {
   function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
+      <div  style={{fontSize:"45px",color:"rgb(56,159,221)",backgroundColor:"transparent",position:"absolute",right:"-18px"}}>
+      <IoIosArrowDropright
+           onClick={onClick}
+        
+        
+       />
+         </div>
+     
+     
     );
   }
-
+  
   function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
+    
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "green" }}
-        onClick={onClick}
-      />
+    <div  style={{fontSize:"45px",color:"rgb(56,159,221)",backgroundColor:"transparent" ,position:"absolute",left:"-18px",zIndex:"999"}}>
+ <IoIosArrowDropleft
+      onClick={onClick}
+   
+   
+  />
+    </div>
+   
+  
     );
   }
+    
 
-  let settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-  };
+   let settings = {
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
+   
+    }
+     
 
   return (
     <WebseriesWrapper>
       <div>
-        <h2>Shop, Book and Bring Home A Part of Singapore</h2>
+        <h1>Shop, Book and Bring Home A Part of Singapore</h1>
         <text>
           Everything that comes with the Singapore tag is made with passion. New
           collaborations with Airbnb and Krisshop in India are testament to
@@ -48,7 +60,8 @@ const SGWebseries = () => {
           you like and start shopping!
         </text>
       </div>
-      <Slider {...settings}>
+      <Slider {...settings} style={{margin:"auto",alignItems:"center",width:"100%",display:"flex"}}
+      >
         <WeseriesCard>
           <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643354405_container_5_1.jpg"></img>
           <h3>A Sneak-Peek:Chhota Bheem In Singapore</h3>
