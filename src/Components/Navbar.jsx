@@ -15,10 +15,33 @@ import { Link, NavLink } from "react-router-dom";
 import { ShowContext } from "../Context/ShowContext";
 import styles from "./Navbar.module.css";
 import Signin from "./Signin";
-
+import Signup from "./Signup";
+import { signOut, onAuthStateChanged } from "firebase/auth";
+import { auth } from "../firebase-config";
 export function Navbar() {
+
   const [color, setColor] = useState(false);
   const { show, setShow } = useContext(ShowContext);
+
+  const [email, setEmail] = useState("");
+  const { setIsAuth } = useContext(ShowContext);
+  onAuthStateChanged(auth, (currentUser) => {
+    setEmail(currentUser.email);
+    setIsAuth(true);
+  });
+
+  let name = email.split("@");
+
+  name = name[0].toUpperCase();
+
+  function logoutUser() {
+    signOut(auth).then((res) => {
+      setEmail("");
+      setIsAuth(false);
+    });
+  }
+
+
   const changeColor = () => {
     if (window.scrollY > 100) {
       setColor(true);
@@ -32,8 +55,12 @@ export function Navbar() {
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
   }, []);
-  console.log(show);
+  
+
   return (
+
+    
+
     <Box
       id={styles.navbar}
       style={
@@ -72,7 +99,8 @@ export function Navbar() {
         <NavLink to="/forum">Forum</NavLink>
         <NavLink to="/packages">Packages</NavLink>
         <NavLink to="/publish">Publish trip</NavLink>
-        <Signin />
+       {name ? <div> {name}<button style={{marginLeft:"10px"}} onClick={logoutUser}>{" "}LogOut</button> </div>: <Signin  />}
+      
       </Box>
     </Box>
   );
