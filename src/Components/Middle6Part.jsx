@@ -20,7 +20,7 @@ export default function Middle6Part() {
     },[])
     
     function getData(){
-       axios.get("http://localhost:8080/bookhotels").then((res)=>setData(res.data))
+       axios.get("https://avdhoot-fake-api.herokuapp.com/bookhotels").then((res)=>setData(res.data))
     }
 
 
