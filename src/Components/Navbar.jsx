@@ -61,8 +61,8 @@ export function Navbar() {
         <Menu>
           <MenuButton as={Box}>Inspiration</MenuButton>
           <MenuList color="black" width="30px" fontSize="14px">
-            <MenuItem>Visit Singapore</MenuItem>
-            <MenuItem>Beaches</MenuItem>
+            <MenuItem><NavLink to="/inspiration/singapore">Visit Singapore</NavLink></MenuItem>
+            <MenuItem><NavLink to="inspiration/beach">Beaches</NavLink></MenuItem>
             <MenuItem>Mark as Draft</MenuItem>
             <MenuItem>Delete</MenuItem>
             <MenuItem>Attend a Workshop</MenuItem>

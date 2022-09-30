@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import styles from "./BgImage.module.css"
 
 function BgImage() {
+     
     const [size,setSize] = useState(window.innerHeight)
     // console.log(size)
     // console.log(window.innerHeight)
