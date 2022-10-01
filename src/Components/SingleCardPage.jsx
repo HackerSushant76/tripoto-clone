@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Box,Button,Heading, Image, Input, Textarea } from '@chakra-ui/react';
+import { useParams } from 'react-router-dom';
 
 function SingleCardPage() {
+    const params=useParams([])
     const [sPage,setSPage] =useState([]);
-    const getPageData =()=>axios.get(`https://avdhoot-fake-api.herokuapp.com/partnerships/2`)
+    const getPageData =()=>axios.get(`https://avdhoot-fake-api.herokuapp.com/partnerships/${params.id}`)
                             .then(r=>setSPage(r.data)).catch(err=>console.log(err));
     useEffect(()=>{
         getPageData();
-        console.log(sPage);
-    },[])
+    },[params.id])
   return (
     <div>
         <Box bg="blue.400" h={"60px"} ></Box>
