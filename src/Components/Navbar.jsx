@@ -1,4 +1,5 @@
 import {
+  Avatar,
   Box,
   Button,
   Heading,
@@ -100,8 +101,9 @@ export function Navbar() {
         <NavLink to="/forum">Forum</NavLink>
         <NavLink to="/packages">Packages</NavLink>
         <NavLink to="/publish">Publish trip</NavLink>
-       {name ? <div> {name}<button style={{marginLeft:"10px"}} onClick={logoutUser}>{" "}Log Out</button> </div>: <Signin  />}
-      
+        <Box cursor= "pointer">
+       {name ? <div> <Avatar w="20px" h="20px"  mr="3px"/> {name}<button style={{marginLeft:"10px"}} onClick={logoutUser}>{" "}Log Out</button> </div>: <Signin />}
+       </Box>
       </Box>
     </Box>
   );
