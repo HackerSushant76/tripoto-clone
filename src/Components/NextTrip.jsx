@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Carousel from "react-elastic-carousel";
 import Item from "../Components/item2";
 import CaraouselThree from "./CarouselThree";

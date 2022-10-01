@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-elastic-carousel";
-import Item from "../Components/item";
+import Item from "./item";
 import axios from "axios";
-import CarouselItem from "./CarouselOne";
 import CaraouselTwo from "./CarouselTwo";
 
 const breakPoints = [
