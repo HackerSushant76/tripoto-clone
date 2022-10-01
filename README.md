@@ -1,3 +1,14 @@
+#Tripoto Clone
+## Thisis a collaborative project completed by five group member
+
+- Team Lead : Sushant Singh Yadav
+- Member-1 : Ritesh Kumar
+- Member-2 : Avdhoot Kailas Kurhe
+- Member-3 : Dilip Singh
+- Member-4 : Rohit Sawant
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
