@@ -26,13 +26,13 @@ const IndiaCarousel = () => {
       });
   }, []);
 
-  console.log(i_data);
+  // console.log(i_data);
 
   
   return (
     <div className="App">
       <div className="carousel-wrapper">
-        <Carousel breakPoints={breakPoints}>
+        <Carousel pagination={false} breakPoints={breakPoints}>
           {i_data.map((item) => (
             <Item key={item.id}>
               <CaraouselTwo

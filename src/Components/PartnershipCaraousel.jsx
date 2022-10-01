@@ -26,13 +26,13 @@ const PartnershipCaraousel = () => {
       });
   }, []);
 
-  console.log(p_data);
+  // console.log(p_data);
 
   
   return (
     <div className="App">
       <div className="carousel-wrapper">
-        <Carousel breakPoints={breakPoints}>
+        <Carousel pagination={false} breakPoints={breakPoints}>
           {p_data.map((item) => (
             <Item key={item.id}>
               <CarouselOne

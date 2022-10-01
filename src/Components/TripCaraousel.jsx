@@ -26,13 +26,13 @@ const TripCarousel = () => {
       });
   }, []);
 
-  console.log(t_data);
+  // console.log(t_data);
 
   
   return (
     <div className="App">
       <div className="carousel-wrapper">
-        <Carousel breakPoints={breakPoints}>
+        <Carousel pagination={false} breakPoints={breakPoints}>
           {t_data.map((item) => (
             <Item key={item.id}>
               <CarouselOne
