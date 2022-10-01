@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   BeachGridWrapper,
   BeachWrapper,
@@ -13,8 +13,9 @@ import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import Topbeach from "./Topbeach";
 import Package from "./Package";
 import Comprehensive from "./Comprehensive"
+import { ShowContext } from "../../Context/ShowContext";
 const Beach = () => {
-
+  const {show,setShow} = useContext(ShowContext)
   const [beachgrid, setBeachgrid] = useState([]);
   const [vlogData, setVlogData] = useState([]);
   useEffect(() => {
@@ -26,11 +27,14 @@ const Beach = () => {
   
       });
   }, []);
+  useEffect(()=>{
+    setShow(true)
+  },[])
 
   function SampleNextArrow(props) {
     const { onClick } = props;
     return (
-      <div  style={{fontSize:"45px",color:"rgb(56,159,221)",backgroundColor:"transparent",position:"absolute",right:"-18px",}}>
+      <div  style={{fontSize:"45px",color:"rgb(56,159,221)",backgroundColor:"transparent",position:"absolute",right:"-18px"}}>
       <IoIosArrowDropright
            onClick={onClick}
         
@@ -95,8 +99,11 @@ const Beach = () => {
 
   return (
     <BeachWrapper>
-      <h1>Beaches</h1>
-      <text>
+      <br />
+      <br />
+      <br />
+      <h1 style={{ }}>Beaches</h1>
+      <text >
         The crunch of white sand beneath your feet and the thundering ocean
         beckoning you into its cool waters. Explore all you need to know about
         taking a trip to the beach!
