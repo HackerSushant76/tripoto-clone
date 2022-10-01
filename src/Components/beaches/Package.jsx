@@ -105,7 +105,7 @@ const Package = () => {
   return (
     <WebseriesWrapper>
       <div>
-        <h1>Top Beach Properties You Need to Experience This Year</h1>
+        <h1>Packages</h1>
       </div>
       <Slider
         {...settings}
