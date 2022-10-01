@@ -9,7 +9,7 @@ const CarouselOne = (props) => {
   return (
 
     <div>
-      <Link to={`/partnership/:${id}`} >
+      <Link to={`/partnership/${id}`} >
         <Box className='content-div' >
             <img style={{"marginBottom":"10px"}} src={image} alt="" />
             <Heading as={"h5"} size={"xs"} style={{"marginBottom":"10px"}} >
