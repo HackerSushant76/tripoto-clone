@@ -1,11 +1,14 @@
 import { Box, Heading } from "@chakra-ui/react";
 import React from "react";
-import { Carousel } from "./Carousel";
 import Home2 from "./Home2";
+import IndiaCarousel from "./IndiaCarousel";
+import PartnershipCaraousel from "./PartnershipCaraousel";
 import { Tourism } from "./Tourism";
+import TripCarousel from "./TripCaraousel";
 import TypeOfTraveller from "./TypeOfTraveller";
 
 const Home_1 = () => {
+
   return (
     <div>
       <Box id="home1_A">
@@ -37,37 +40,47 @@ const Home_1 = () => {
       {/* partnership caraousel  */}
       <br />
       <br />
-      <Box width={"80%"} margin={"auto"} height={"300px"} border={"1px solid"} >
-      <Heading>First Carousel</Heading>
+      <Box width={"85%"} margin={"auto"} height={"350px"} >
+        <PartnershipCaraousel />
       </Box>
       <br />
       <br />
 
       {/* Second Carousel */}
-      
-      <Box width={"80%"} margin={"auto"} height={"300px"} border={"1px solid"} >
-      <Heading>Second Carousel</Heading>
+
+      <Box width={"85%"} margin={"auto"} height={"350px"} >
+        <TripCarousel/>
       </Box>
       <br />
       <br />
 
       {/* TOURISM */}
 
-      <Tourism/>
+      <Tourism />
       <br />
       <br />
 
-       {/* Third Carousel*/}
-       <Heading size={"l"}>Plan You Next International Trip During October & November</Heading>
-       <br />
-       <Box width={"80%"} margin={"auto"} height={"300px"} border={"1px solid"} >
-      <Heading size={"l"}>Third Carousel</Heading></Box>
+      {/* Third Carousel*/}
+      
+      <br />
+      <Box width={"85%"} margin={"auto"} height={"350px"} >
+      <Heading marginBottom={"1%"} marginLeft={"5.5%"} size={"lg"}>
+        Plan You Next International Trip During October & November
+      </Heading>
+        <IndiaCarousel/>
+      </Box>
       <br />
       <br />
-      <Heading size={"l"}>Check Out Best Hotels and Properties for Every Type of Traveller</Heading>
       <br />
-      <TypeOfTraveller/>
-      <Home2/>
+      <Box width={"85%"} margin={"auto"} height={"350px"} >
+      <Heading  marginBottom={"1%"} marginLeft={"5.5%"} size={"lg"}>
+        Check Out Best Hotels and Properties for Every Type of Traveller
+      </Heading>
+      <TypeOfTraveller />
+      </Box>
+      <br />
+      <br />
+      <Home2 />
     </div>
   );
 };
