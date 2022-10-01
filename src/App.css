@@ -2,4 +2,7 @@
   text-align: center;
 } */
 
-
+.hover{
+  cursor: pointer;
+  text-shadow: 1px;
+}

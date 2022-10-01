@@ -1,21 +1,24 @@
-import { Box } from '@chakra-ui/react'
-import React from 'react'
-import BgImage from '../Components/BgImage'
-import CustomPackage from '../Components/CustomPackage'
-import PackageFirstSection from '../Components/PackageFirstSection'
-import Styles from "./Packages.module.css"
+import { Box } from "@chakra-ui/react";
+import React from "react";
+import BgImage from "../Components/BgImage";
+import CustomPackage from "../Components/CustomPackage";
+import PackageFirstSection from "../Components/PackageFirstSection";
+import Styles from "./Packages.module.css";
 
 function Packages() {
   return (
     <Box textAlign="left">
-        <BgImage/>
-        <PackageFirstSection />
-        <br />
-        <br />
-        <br />
-        <CustomPackage/>
+      <BgImage />
+      <PackageFirstSection />
+      <br />
+      <br />
+      <br />
+      <CustomPackage />
+      <br />
+      <br />
+      <br />
     </Box>
-  )
+  );
 }
 
-export default Packages
+export default Packages;

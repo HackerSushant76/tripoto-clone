@@ -23,6 +23,7 @@ import {
     Input,
     Box,
   } from '@chakra-ui/react'
+import Signup from './Signup';
 
   
 
@@ -63,19 +64,15 @@ function Signin() {
    
     return (
       <>
-         
-
-        
-        <Box onClick={onOpen}>Sign in</Box>
-        {/* <Button ml={4} ref={finalRef}>
-          I'll receive focus on close
-        </Button> */}
+       
+        <Box onClick={onOpen} className="hover">Sign in</Box>
   
         <Modal
           initialFocusRef={initialRef}
           finalFocusRef={finalRef}
           isOpen={isOpen}
           onClose={onClose}
+          size="xs"
         >
           <ModalOverlay />
           <ModalContent>
@@ -85,27 +82,32 @@ function Signin() {
             <Button backgroundColor="white" fontWeight="500" letterSpacing="0.6px" fontFamily="sans-serif" width="89%" margin="auto" marginTop='5px' marginBottom="5px" onClick={signInWithGoogle}><FcGoogle style={{paddingRight:"5px"}} size={28} />Log in with google</Button>
             <Box  textAlign="center">OR</Box>
             <ModalCloseButton />
-            <ModalBody pb={6}>
+            <ModalBody pb={6} fontSize="14px">
+              <Button width="100%" bg={"#4a66a0"} color="white" mb={5}>Log in with Facebook</Button>
+              <Button  width="100%" bg={"white"} boxShadow="base" mb={3}>Log in with Google</Button>
+              <Box  textAlign={"center"} mb={3}>OR</Box>
               <FormControl>
-                <FormLabel>Email</FormLabel>
+                {/* <FormLabel>Email</FormLabel> */}
                 <Input ref={initialRef} placeholder='Enter Email'  onChange={(e)=>setRegisterEmail(e.target.value)}  />
               </FormControl>
   
               <FormControl mt={4}>
-                <FormLabel>Password</FormLabel>
-                <Input placeholder='Enter password' type="password"   onChange={(e)=>setRegisterPassword(e.target.value)}  />
+                {/* <FormLabel>Password</FormLabel> */}
+                <Input placeholder='Enter password'   onChange={(e)=>setRegisterPassword(e.target.value)}  />
               </FormControl>
 
             </ModalBody>
   
             <ModalFooter>
-              <Button colorScheme='blue' mr={3} onClick={handleSubmit}>
-                Submit
+              <Button bgColor='#f27669' color="white" w="100%" onClick={handleSubmit}>
+                LOG IN
               </Button>
-              <Button onClick={onClose}>Cancel</Button>
+              {/* <Button onClick={onClose}>Cancel</Button> */}
             </ModalFooter>
+            <Box textAlign="center" fontSize="13px" display="flex" alignItems={"center"} gap="5px" justifyContent={"center"}>Don't have an account? <Signup /></Box>
+            <br />
           </ModalContent>
-       
+            
         </Modal>
           
       </>
