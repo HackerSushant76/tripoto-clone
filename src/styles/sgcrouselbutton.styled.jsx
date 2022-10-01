@@ -1,21 +1,22 @@
 import styled from "styled-components"
 
 export const CrouselButtonWrapper = styled.div`
-  width: 100%;
-  margin-top: 50px;
-  border: 1px solid red;
-
-  div {
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 99%;
-  }
+  
+   margin-top:40px;
+ h1{
+  font-weight:700;
+  font-size:38px;
+ }
   img {
-    width: 80%;
-    border: 1px solid yellow;
-    margin-right: -90px;
+    margin-top:30px;
+    align-items:center;
+    height:65px;
+    object-fit: cover;
+    object-position:center;
+    width:85%;
+    padding-left:30px;
+    border-radius: 4px;
+  
   }
 `;
 

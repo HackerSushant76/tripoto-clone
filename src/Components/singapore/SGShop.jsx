@@ -18,7 +18,7 @@ const SGShop = () => {
   return (
     <SGShopWrapper>
       <div>
-        <h2>Shop, Book and Bring Home A Part of Singapore</h2>
+        <h1>Shop, Book and Bring Home A Part of Singapore</h1>
         <text>
           Everything that comes with the Singapore tag is made with passion. New
           collaborations with Airbnb and Krisshop in India are testament to

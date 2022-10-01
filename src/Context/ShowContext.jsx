@@ -4,7 +4,10 @@ import { createContext } from 'react'
 
 export const ShowContext = createContext()
 function ShowContextProvider({children}) {
+
     const [show, setShow] = useState(false)
+    const [isAuth,setIsAuth]=useState(false)
+
     const [formValue1,setFormValue1] =useState( {email:"",city:"",fullname:"",contact:"",option1:"",option2:"",date:"",image1:"",duration:"",cost:"",place:""});
     const [formValue2,setFormValue2] =useState( {image:"",duration:"",cost:"",place:""});
 
@@ -29,9 +32,9 @@ function ShowContextProvider({children}) {
        })
       }
 
-
   return (
-    <ShowContext.Provider value={{show,setShow,formValue1,fillForm1,formValue2,fillForm2}}>
+    <ShowContext.Provider value={{show,setShow,formValue1,fillForm1,formValue2,fillForm2,isAuth,setIsAuth}}>
+
         {children}
     </ShowContext.Provider>
   )

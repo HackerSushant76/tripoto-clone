@@ -21,5 +21,7 @@ export const EventImageWrapper = styled.div`
   margin-top: 15px;
   img {
     width: 100%;
+    object-fit:cover;
+    object-position: top;
   }
 `;
