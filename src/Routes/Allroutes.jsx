@@ -24,7 +24,7 @@ export function AllRoutes() {
       <Route path="/forum" element={<Heading>Forum</Heading>} />
       <Route path="/packages" element={<Packages/>} />
       <Route path="/publish" element={<Heading>Publish</Heading>} />
-      <Route path="/Partnerships/:id" element={ <SingleCardPage/>  }/>
+      <Route path="/partnership/:id" element={ <SingleCardPage/>  }/>
       <Route path="/TripPage/:id" element={<TripPage/>}/>
      
       <Route path="/signin" element={<Home_1/>} />
