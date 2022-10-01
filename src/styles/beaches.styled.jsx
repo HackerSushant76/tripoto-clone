@@ -1,12 +1,12 @@
 import styled from "styled-components"
 export const BeachWrapper = styled.div`
   margin: auto;
+  
   width: 85%;
   font-family: sans-serif;
   h1{
     font-size:29px;
     font-weight:700;
-    margin-top:10px;
     margin-bottom:8px;
   }
   text {
@@ -65,6 +65,7 @@ export const VlogWrapper = styled.div`
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom:40px;
   div {
     width: 23%;
   }

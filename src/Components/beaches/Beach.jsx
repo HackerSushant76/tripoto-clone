@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import {
   BeachGridWrapper,
   BeachWrapper,
-  VlogWrapper,
+  VlogWrapper
+ 
 } from "../../styles/beaches.styled";
 import axios from "axios";
 import "slick-carousel/slick/slick.css";
@@ -10,6 +11,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
 import Topbeach from "./Topbeach";
+import Package from "./Package";
+import Comprehensive from "./Comprehensive"
 const Beach = () => {
 
   const [beachgrid, setBeachgrid] = useState([]);
@@ -62,6 +65,32 @@ const Beach = () => {
     slidesToScroll: 3,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
@@ -88,6 +117,8 @@ const Beach = () => {
       </BeachGridWrapper>
 
        <Topbeach/>
+       <Package/>
+       <Comprehensive/>
       <div>
         <h1 style={{ fontFamily: "sans-serif" }}>
           Top Tripoto Vlogs for Beaches This Week

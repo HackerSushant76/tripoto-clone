@@ -99,7 +99,7 @@ export function Navbar() {
         <NavLink to="/forum">Forum</NavLink>
         <NavLink to="/packages">Packages</NavLink>
         <NavLink to="/publish">Publish trip</NavLink>
-       {name ? <div> {name}<button style={{marginLeft:"10px"}} onClick={logoutUser}>{" "}LogOut</button> </div>: <Signin  />}
+       {name ? <div> {name}<button style={{marginLeft:"10px"}} onClick={logoutUser}>{" "}Log Out</button> </div>: <Signin  />}
       
       </Box>
     </Box>

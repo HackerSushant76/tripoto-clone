@@ -348,5 +348,198 @@
         "cost": "5,199",
         "days": "3 Days 2 Nights"
       }
+    ],
+    "Package":[
+      {
+        "id":1,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1358540/Image/1560249767_mlex.jpg",
+        "type":"PACKAGE",
+        "title":"4 Days In Maldives",
+        "location":"Maldives",
+        "button":"4D-3N",
+        "price":"₹ 32,000",
+        "person":"/person",
+        "quotes":"Get Quotes",
+        "brand_logo":"https://cdn1.tripoto.com/media/filter/mss/img/411197/UserPhoto/1552395968_oyo.jpg",
+        "brand_name":"OYO Total Holidays"
+        
+      
+      },
+      {
+        "id":2,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567494998_andaman_app.jpg",
+        "type":"PACKAGE",
+        "title":"Explore Maldives",
+        "location":"Maldives",
+        "button":"4D-3N",
+        "price":"₹ 28,500",
+        "person":"/ person",
+        "quotes":"Get Quotes",
+        "brand_logo":"https://cdn1.tripoto.com/media/filter/mss/img/1550627/UserPhoto/1557303075_0.png",
+        "brand_name":"Destynasia Venture"
+        
+      
+      },
+      {
+        "id":3,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1569824408_mauritius.jpg",
+        "type":"PACKAGE",
+        "title":"Magical Mauritius",
+        "location":"Mauritius",
+        "button":"Get Quotes",
+        "price":"₹ 25,000",
+        "person":"/person",
+        "quotes":"Get Quotes",
+        "brand_logo":"https://cdn1.tripoto.com/media/filter/mss/img/1467829/UserPhoto/1568839915_tui_logo.jpg",
+        "brand_name":"TUI India"
+        
+      
+      },
+      {
+        "id":4,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1358540/Image/1560249904_mauto.jpg",
+        "type":"PACKAGE",
+        "title":"Andaman Packages",
+    
+        "location":"Mauritius",
+        "button":"5D-4N",
+        "price":"₹ 18,000",
+        "person":"onwards",
+        "quotes":"Get Quotes",
+        "brand_logo":"https://cdn1.tripoto.com/media/filter/mss/img/1358539/UserPhoto/1553849222_logo.jpg",
+        "brand_name":"Tripoto Verified Partner"
+        
+      
+      },
+      {
+        "id":5,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/747480/Image/1556628527_bali.jpg",
+        "type":"PACKAGE",
+        "title":"Experience Mauritius",
+     
+        "location":"Bali",
+        "button":"7D-6N",
+        "price":"₹ 68,000",
+        "person":"/person",
+        "quotes":"Get Quotes",
+        "brand_logo":"https://cdn1.tripoto.com/media/filter/mss/img/411197/UserPhoto/1552395968_oyo.jpg",
+        "brand_name":"OYO Total Holidays"
+        
+      
+      },
+      {
+        "id":6,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1358540/Image/1560249904_mauto.jpg",
+        "type":"PACKAGE",
+        "title":"7 Days In Mauritius",
+    
+        "location":"Mauritius",
+        "button":"7D-6N",
+        "price":"₹ 20,000",
+        "person":"/person",
+        "quotes":"Get Quotes",
+        "brand_logo":"https://cdn1.tripoto.com/media/filter/mss/img/411197/UserPhoto/1552395968_oyo.jpg",
+        "brand_name":"OYO Total Holidays"
+        
+      
+      },
+      {
+        "id":7,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/747480/Image/1556628527_bali.jpg",
+        "type":"PACKAGE",
+        "title":"Premium Pool Villa Special",
+    
+        "location":"Maldives",
+        "button":"6D-5N",
+        "price":"₹ 23,454",
+        "person":"/person",
+        "quotes":"Get Quotes",
+        "brand_logo":"https://cdn1.tripoto.com/media/filter/mss/img/411197/UserPhoto/1552395968_oyo.jpg",
+        "brand_name":"OYO Total Holidays"
+      
+      },
+      {
+        "id":8,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/270755/Image/1560495127_honeymoon.jpg",
+        "type":"PACKAGE",
+        "title":"Honeymoon On Beaches And Desert.",
+     
+        "location":"Maldives",
+        "button":"8D-8N",
+        "price":"₹ 88,999",
+        "person":"/person",
+        "quotes":"Get Quotes",
+        "brand_logo":"https://cdn1.tripoto.com/media/filter/mss/img/1586489/UserPhoto/1559222611_logo.jpg",
+        "brand_name":"IFLy Vacation PVT Ltd."
+        
+      
+      },
+      {
+        "id":9,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1791424/Image/1587377760_3_20.jpg",
+        "type":"PACKAGE",
+        "title":"Exotic Maldives",
+    
+        "location":"Maldives",
+        "button":"4D-3N",
+        "price":"₹ 22,000",
+        "person":"/person",
+        "quotes":"Get Quotes",
+        "brand_logo":"https://cdn1.tripoto.com/media/filter/mss/img/1334305/UserPhoto/1557748206_untitled.png",
+        "brand_name":"Explore More Holidays"
+        
+      
+      },
+      {
+        "id":10,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1442601/Image/1587368453_14_new.jpg",
+        "type":"PACKAGE",
+        "title":"4 Days Holiday In Maldives",
+        "location":"Maldives",
+        "button":"4D-3N",
+        "price":"₹ 48,000",
+        "person":"/person",
+        "quotes":"Get Quotes",
+        "brand_logo":"https://cdn1.tripoto.com/media/filter/mss/img/1545356/UserPhoto/1556986378_sfm_logo.jpg",
+        "brand_name":"SFM Travels"
+        
+      
+      }
+      
+  
+    ],
+    "Comprehensive":[
+      {
+        "id":1,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1/Image/1515581176_goa_2779868_960_720.jpg",
+        "title":"Goa"
+      },
+
+      {
+        "id":2,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1/Image/1515580969_om_beach_gokarna_india.jpg",
+        "title":"Gokarna"
+      },
+      {
+        "id":3,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1/Image/1515581068_image_pondicherry.jpg",
+        "title":"Pondicherry"
+      },
+      {
+        "id":4,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1/Image/1515581135_havelock_andaman_nicobar_islands.jpg",
+        "title":"Andman and Nicobar"
+      },
+      {
+        "id":5,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1/Image/1515580204_1471349330_beautiful_beach_wallpapers_for_android.jpg",
+        "title":"Kerala"
+      },
+      {
+        "id":6,
+        "image":"https://cdn1.tripoto.com/media/filter/tst/img/1/Image/1515580148_malvan_beach3.jpg",
+        "title":"Maharashtra"
+      }
+
     ]
   }
