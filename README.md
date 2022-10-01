@@ -22,5 +22,7 @@ Firstly let’s know about Tripto. Tripoto is a travel Booking website, for prov
 #### For authentication: Google firebase authentication.
 
 ## Run Code Locally
-### npm install
-### npm start
+npm install
+npm start
+
+## Deployed Link :
