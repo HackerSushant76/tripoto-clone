@@ -23,7 +23,7 @@ const Package = () => {
   const [packag, setPackage] = useState([]);
   useEffect(() => {
     axios
-      .get(" http://localhost:8080/Package")
+      .get("https://avdhoot-fake-api.herokuapp.com/Package")
       .then((res) => {
         setPackage(res.data);
       });

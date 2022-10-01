@@ -3,3 +3,6 @@ https://avdhoot-fake-api.herokuapp.com/trip
 https://avdhoot-fake-api.herokuapp.com/india
 https://avdhoot-fake-api.herokuapp.com/hotels
 https://avdhoot-fake-api.herokuapp.com/bookhotels
+https://avdhoot-fake-api.herokuapp.com/Singapore
+https://avdhoot-fake-api.herokuapp.com/Comprehensive
+https://avdhoot-fake-api.herokuapp.com/Package

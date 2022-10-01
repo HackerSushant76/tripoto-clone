@@ -8,80 +8,101 @@
   height: 340px;
 }
 
-#luftansa{
-    border: 1px solid;
-    height: 250px;
-    width: 55%;
-    margin: auto;
-    background-color: rgb(88, 88, 76);
-    margin-bottom: 5%;
+#luftansa {
+  border: 1px solid;
+  height: 250px;
+  width: 55%;
+  margin: auto;
+  background-color: rgb(88, 88, 76);
+  margin-bottom: 5%;
 }
 
 /* Home1 */
 
-#home1_A{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: auto;
-    /* border: 1px solid; */
-    align-items: center;
-    width: 75%;
+#home1_A {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  /* border: 1px solid; */
+  align-items: center;
+  width: 75%;
 }
 
-#home1_A img{
-    height: 65px;
-    border: 1px solid silver;
+#home1_A img {
+  height: 65px;
+  border: 1px solid silver;
 }
 
-#partnerships{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* width: 90%; */
-    align-items: center;
-    gap: 10px;
-    margin: auto;
+/* Tourism */
+
+#tour-flex {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid; */
+  justify-content: space-around;
 }
 
-#partnerships img{
-    height: 170px;
-    width: 95%;
-    border-radius: 10px;
+#tour-flex > div {
+  width: 23%;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* #home1_A{
-    border: 1px solid;
-} */
-
-
-#home1_B{
-    /* border: 1px solid; */
-    width: 75%;
-    margin: auto;
+#tour-flex div img {
+  height: 180px;
+  border-radius: 10px;
 }
 
-#tourism{
-    width: 75%;
-    margin: auto;
-    
+#tour-flex div h4 {
+  padding-left: 5px;
+  padding-right: 0px;
 }
 
-#tourism > img{
-    border-radius: 10px;    
+/* Traveller */
+
+#traveller-flex {
+  /* border: 1px solid; */
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
 }
 
-#tourism_B{
-    display: flex;
-    width: 75%;
-    margin: auto;
+#traveller-flex > div {
+  width: 23%;
 }
 
-
-#tourism_B > div:nth-child(1) > img{
-    height: 40vh;
-    width:  95%;
+#traveller-flex > div img {
+  border-radius: 10px;
+  height: 220px;
 }
 
-#tourism_B > div:nth-child(2) >img{
-    height: 40vh;
-    width: 95%;
+#traveller-flex > div > h4 {
+  font-size: 17px;
+}
+
+/* Spotlight */
+
+#spot-flex {
+  width: 80%;
+  margin: auto;
+}
+
+#spot-flex-2 {
+  display: flex;
+  /* border: 1px solid blue; */
+  justify-content: space-between;
+}
+
+#spot-flex-2 div {
+  width: 35%;
+  /* border: 1px solid; */
+}
+
+#spot-flex-2 div img {
+    border-radius: 5px;
+    height: 450px;
 }
