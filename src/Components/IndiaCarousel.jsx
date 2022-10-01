@@ -32,7 +32,7 @@ const IndiaCarousel = () => {
   return (
     <div className="App">
       <div className="carousel-wrapper">
-        <Carousel breakPoints={breakPoints}>
+        <Carousel pagination={false} breakPoints={breakPoints}>
           {i_data.map((item) => (
             <Item key={item.id}>
               <CaraouselTwo
