@@ -83,9 +83,6 @@ function Signin() {
             <Box  textAlign="center">OR</Box>
             <ModalCloseButton />
             <ModalBody pb={6} fontSize="14px">
-              <Button width="100%" bg={"#4a66a0"} color="white" mb={5}>Log in with Facebook</Button>
-              <Button  width="100%" bg={"white"} boxShadow="base" mb={3}>Log in with Google</Button>
-              <Box  textAlign={"center"} mb={3}>OR</Box>
               <FormControl>
                 {/* <FormLabel>Email</FormLabel> */}
                 <Input ref={initialRef} placeholder='Enter Email'  onChange={(e)=>setRegisterEmail(e.target.value)}  />
