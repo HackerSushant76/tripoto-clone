@@ -27,7 +27,7 @@ const NextTrip = () => {
   return (
     <div className="App">
       <div className="carousel-wrapper-country">
-        <Carousel breakPoints={breakPoints}>
+        <Carousel pagination={false} breakPoints={breakPoints}>
           {n_trip.map((item) => (
             <Item>
               <CaraouselThree
