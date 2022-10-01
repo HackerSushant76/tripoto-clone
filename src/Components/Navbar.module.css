@@ -23,3 +23,8 @@
     margin-left: -200px;
     border-radius: 2px;
 }
+@media (max-width) {
+    .navSearch {
+        display: none;
+    }
+}

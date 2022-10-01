@@ -18,10 +18,8 @@
 }
 
 .IstSection>div>div {
-    /* width: 30%; */
     /* border: 1px solid blue; */
     height: 100%;
-    /* margin: auto; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -42,4 +40,18 @@
 .title{
     /* border: 1px solid purple; */
     font-weight: bold;
+}
+@media (max-width: 500px){
+    .IstSection {
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    .IstSection>div {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 35px;
+        margin-top: 30px;
+    }
 }

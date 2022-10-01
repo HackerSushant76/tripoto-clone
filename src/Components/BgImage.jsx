@@ -9,15 +9,15 @@ function BgImage() {
       <Box
         position={"absolute"}
         top="35%"
-        width={"40%"}
-        left={"30%"}
+        // width={"40%"}
+        
         textAlign="center"
       >
         <Heading mb={"12px"} size="lg" color={"white"}>
           Exclusive Tours & Holiday Packages
         </Heading>
         <Input
-          width="550px"
+          width="80%"
           height="45px"
           fontSize="12px"
           backgroundColor={"white"}

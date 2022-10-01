@@ -10,9 +10,6 @@ function Packages() {
     <Box textAlign="left">
       <BgImage />
       <PackageFirstSection />
-      <br />
-      <br />
-      <br />
       <CustomPackage />
       <br />
       <br />
