@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Box,Button,Heading, Image, Input, Textarea } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
+import { TopTravelCarousel } from './TopTravelCarousel';
 
 function SingleCardPage() {
     const params=useParams([])
@@ -166,8 +167,8 @@ function SingleCardPage() {
             </Box>
         </Box>
         <Box w="930px" m="auto" > 
-        <Heading mt="2rem">More Stories For Coonoor</Heading>
-        
+        <Heading mt="2rem"  fontSize="20px">More Stories For Coonoor</Heading>
+        <TopTravelCarousel/>
         </Box>
     </div>
   )
