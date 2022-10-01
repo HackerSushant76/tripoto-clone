@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Heading,
+  Image,
   Input,
   Menu,
   MenuButton,
@@ -44,7 +45,7 @@ export function Navbar() {
       }
     >
       <Box>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/"><Image src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg"/></NavLink>
       </Box>
       <Box>
         {show && (

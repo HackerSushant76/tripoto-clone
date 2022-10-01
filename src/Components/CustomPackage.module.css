@@ -1,0 +1,11 @@
+.CustomPackage{
+    /* margin-top: 200px; */
+    border: 1px solid red;
+}
+.customImage{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
