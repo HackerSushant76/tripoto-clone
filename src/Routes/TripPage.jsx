@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState,useContext } from "react";
-import Footer from "../Components/Footer";
 import axios from "axios";
 import {BsWhatsapp} from "react-icons/bs";
 import {FaCampground} from "react-icons/fa";
@@ -260,7 +259,6 @@ function getData(){ axios.get(`https://avdhoot-fake-api.herokuapp.com/bookhotels
         </div>
         <p className={styles.experience}>More to Experience</p>
        <Middle6Part />
-        <Footer />
         </div>
         
     )
