@@ -136,3 +136,18 @@
     height: 320px;
     border-radius: 5px;
   }
+
+  .rec.rec-arrow{
+    background-color: white;
+    font-size: 14px;
+    display: block;
+    margin: auto;
+    
+  }
+  
+
+  .rec.rec-arrow:hover{
+    background: rgb(164, 209, 249);
+  }
+
+  

@@ -32,7 +32,7 @@ const PartnershipCaraousel = () => {
   return (
     <div className="App">
       <div className="carousel-wrapper">
-        <Carousel pagination={false} breakPoints={breakPoints}>
+        <Carousel  pagination={false} breakPoints={breakPoints}>
           {p_data.map((item) => (
             <Item key={item.id}>
               <CarouselOne

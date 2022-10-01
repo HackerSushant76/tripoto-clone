@@ -9,7 +9,7 @@ const CaraouselTwo = (props) => {
   return (
 
     <div>
-      <Link to={`/partnership/:${id}`} >
+     
         <Box className='content-div' >
             <img style={{"marginBottom":"10px"}} src={image} alt="" />
             <Text marginBottom={"15px"} fontWeight={"medium"} fontSize={"large"} >
@@ -25,7 +25,7 @@ const CaraouselTwo = (props) => {
             </Text>
             </Box>
         </Box>
-        </Link>
+        
     </div>
   )
 }
