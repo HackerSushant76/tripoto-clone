@@ -4,28 +4,39 @@ import { WebseriesWrapper, WeseriesCard } from "../../styles/sgwebseries";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import {IoIosArrowDropleft,IoIosArrowDropright} from "react-icons/io"
 const SGArts = () => {
   function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
+      <div  style={{fontSize:"45px",color:"rgb(56,159,221)",backgroundColor:"transparent",position:"absolute",right:"-18px",}}>
+      <IoIosArrowDropright
+           onClick={onClick}
+        
+        
+       />
+         </div>
+     
+     
     );
   }
-
+  
   function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
+    
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "green" }}
-        onClick={onClick}
-      />
+    <div  style={{fontSize:"45px",color:"rgb(56,159,221)",backgroundColor:"transparent" ,position:"absolute",left:"-18px",zIndex:"999"}}>
+ <IoIosArrowDropleft
+      onClick={onClick}
+   
+   
+  />
+    </div>
+   
+  
     );
   }
+    
 
   let settings = {
     infinite: true,
@@ -34,17 +45,43 @@ const SGArts = () => {
     slidesToScroll: 3,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
     <>
     <WebseriesWrapper>
     <div>
-      <h2>Head out and explore Singapore’s Street Art</h2>
+      <h1>Head out and explore Singapore’s Street Art</h1>
       <text>
       The streets of Singapore have a way of coming alive! Read on to find out the most aesthetic neighbourhoods that will leave you inspired.
       </text>
     </div>
-    <Slider {...settings}>
+    <Slider {...settings} style={{margin:"auto",alignItems:"center",width:"100%",display:"flex"}}>
       <WeseriesCard>
         <img src="https://cdn1.tripoto.com/media/filter/tst/img/1745358/Image/1643104912_1641727053_awli22_black_full_1.png"></img>
         <h3>Cook, Eat, Repeat With Chef Jeremy Nguee</h3>

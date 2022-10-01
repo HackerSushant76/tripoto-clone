@@ -47,7 +47,7 @@ export const SGWhatsnewCard = styled.div`
     color: rgb(255, 102, 51);
     font-size: 12px;
     font-weight: 700;
-    margin-top: -10px;
+   
     line-height: 17.14px;
   }
   h3 {

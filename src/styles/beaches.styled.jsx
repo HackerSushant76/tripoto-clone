@@ -1,8 +1,14 @@
 import styled from "styled-components"
 export const BeachWrapper = styled.div`
   margin: auto;
+  
   width: 85%;
   font-family: sans-serif;
+  h1{
+    font-size:29px;
+    font-weight:700;
+    margin-bottom:8px;
+  }
   text {
     line-height: 20px;
     letter-spacing: 0.6px;
@@ -15,7 +21,7 @@ export const BeachWrapper = styled.div`
 export const BeachGridWrapper = styled.div`
   display: grid;
   gap: 10px;
-
+  
   grid-template-columns: repeat(3, 1fr);
   img {
     width: 100%;
@@ -24,7 +30,7 @@ export const BeachGridWrapper = styled.div`
   }
 
   h3 {
-    font-weight: 500;
+    font-weight: 700;
   }
 
   span {
@@ -36,10 +42,11 @@ export const BeachGridWrapper = styled.div`
   h5 {
     color: rgb(56, 159, 221);
     margin-left: 4px;
-    margin-top: -5px;
+    margin-top: 5px;
     font-size: 16px;
     font-weight: 500;
   }
+ 
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(1, 1fr);
@@ -58,6 +65,7 @@ export const VlogWrapper = styled.div`
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom:40px;
   div {
     width: 23%;
   }

@@ -3,6 +3,10 @@ import styled from "styled-components"
 export const SGShopWrapper = styled.div`
   margin-top: 15px;
   margin-bottom: 15px;
+  h1{
+    font-weight:700;
+    font-size:28px;
+  }
   text {
     font-size: 16px;
     letter-spacing: 0.7px;
@@ -26,6 +30,10 @@ export const SGShopCard = styled.div`
 export const SGShopCardIndividual = styled.div`
   width: 355px;
   margin-right: 15px;
+  h3{
+    font-size:18px;
+    font-weight:700;
+  }
   img {
     width: 100%;
     height: 60%;

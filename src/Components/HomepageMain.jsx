@@ -26,7 +26,6 @@ const Homepage = () => {
         <Home1/>
         <Middle6Part/>
         
-        <Footer/>
     </div>
   )
 }
