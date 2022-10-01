@@ -43,7 +43,7 @@ function Signin() {
         console.log(error)
       }) 
     }
-    console.log(isAuth)
+    // console.log(isAuth)
    
     return (
       <>
@@ -73,7 +73,7 @@ function Signin() {
   
               <FormControl mt={4}>
                 <FormLabel>Password</FormLabel>
-                <Input placeholder='Enter password'   onChange={(e)=>setRegisterPassword(e.target.value)}  />
+                <Input placeholder='Enter password' type="password"   onChange={(e)=>setRegisterPassword(e.target.value)}  />
               </FormControl>
 
             </ModalBody>

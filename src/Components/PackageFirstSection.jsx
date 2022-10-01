@@ -10,7 +10,7 @@ function PackageFirstSection() {
       .get("https://avdhoot-fake-api.herokuapp.com/bookhotels")
       .then((res) => {
         setData(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch((err) => {
         console.log(err);
