@@ -1,6 +1,6 @@
-#Tripoto Clone
+# Tripoto Clone
 
-## This is a collaborative project completed by five group member
+## This is a collaborative project completed by five group members
 
 - Team Lead : Sushant Singh Yadav
 - Member-1 : Ritesh Kumar
