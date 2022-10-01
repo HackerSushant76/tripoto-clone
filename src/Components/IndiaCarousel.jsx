@@ -26,7 +26,7 @@ const IndiaCarousel = () => {
       });
   }, []);
 
-  console.log(i_data);
+  // console.log(i_data);
 
   
   return (

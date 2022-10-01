@@ -26,7 +26,7 @@ const PartnershipCaraousel = () => {
       });
   }, []);
 
-  console.log(p_data);
+  // console.log(p_data);
 
   
   return (

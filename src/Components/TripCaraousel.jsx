@@ -26,7 +26,7 @@ const TripCarousel = () => {
       });
   }, []);
 
-  console.log(t_data);
+  // console.log(t_data);
 
   
   return (
