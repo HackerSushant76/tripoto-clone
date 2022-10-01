@@ -5,6 +5,7 @@ import Packages from "./Packages";
 import Singapore from "../Components/singapore/Singapore";
 import Beach from "../Components/beaches/Beach"
 import SingleCardPage from "../Components/SingleCardPage";
+import TripPage from "./TripPage";
 
 export function AllRoutes() {
   return (
@@ -16,7 +17,8 @@ export function AllRoutes() {
       <Route path="/forum" element={<Heading>Forum</Heading>} />
       <Route path="/packages" element={<Packages/>} />
       <Route path="/publish" element={<Heading>Publish</Heading>} />
-      <Route path="/TripPage/:id" element={ <SingleCardPage/>  }/>
+      <Route path="/Partnerships/:id" element={ <SingleCardPage/>  }/>
+      <Route path="/TripPage/:id" element={<TripPage/>}/>
      
       {/* <Route path="/signin" element={<Heading>Signin</Heading>} /> */}
     </Routes>

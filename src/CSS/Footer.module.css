@@ -1,19 +1,16 @@
 #footer{
     display:  grid;
     margin: auto;
-    text-align: center;
     border: 1px solid;
     grid-template-columns: repeat(5, 1fr);
-    font-size: 24px;
-    font-weight: 400;
     width: 90%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
  #footer div{
     border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
+    margin: 0;
+    padding: 0
 } 
   @media screen and (min-width: 1024px) {
     #footer {
