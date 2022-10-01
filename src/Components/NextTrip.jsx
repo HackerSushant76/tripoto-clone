@@ -29,7 +29,7 @@ const NextTrip = () => {
       <div className="carousel-wrapper-country">
         <Carousel pagination={false} breakPoints={breakPoints}>
           {n_trip.map((item) => (
-            <Item>
+            <Item key={item}>
               <CaraouselThree
                 image={item}
               />
