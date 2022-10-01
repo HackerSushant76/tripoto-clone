@@ -10,6 +10,7 @@ import Home_1 from "../Components/Home1";
 import PrivateRoute from "../Components/PrivateRoute";
 import SingleCardPage from "../Components/SingleCardPage";
 import TripPage from "./TripPage";
+import Booking from "../Components/Booking";
 
 export function AllRoutes() {
   return (
@@ -31,6 +32,7 @@ export function AllRoutes() {
       <Route path="/Partnerships/:id" element={<SingleCardPage />} />
       <Route path="/TripPage/:id" element={<TripPage />} />
       <Route path="/signin" element={<Home_1 />} />
+      <Route path="/booking" element={<Booking/>}/>
       {/* <Route path="/signup" element={<Signup/>} /> */}
     </Routes>
   );
