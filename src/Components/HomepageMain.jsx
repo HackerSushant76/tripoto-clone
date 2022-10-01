@@ -5,6 +5,7 @@ import "../CSS/Homepage.css"
 import Footer from './Footer'
 import Home1 from './Home1'
 import Middle6Part from './Middle6Part'
+import luftansa from "../Images/image1.png"
 
 const Homepage = () => {
   const { show, setShow } = useContext(ShowContext);
@@ -19,7 +20,8 @@ const Homepage = () => {
         </Box>
         <br />
         <Box id="luftansa" >
-           {/* LUFTANSA BANNER  */}
+           <img   style={{"borderRadius":"3px"}}
+ src={luftansa} alt="" />
         </Box>
         <Home1/>
         <Middle6Part/>

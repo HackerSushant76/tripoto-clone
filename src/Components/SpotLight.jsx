@@ -6,7 +6,7 @@ export const SpotLight = () => {
     <div>
       <Box id="spot-flex">
         <Box>
-          <Heading style={{"marginBottom":"15px"}} size={"md"}>
+          <Heading style={{"marginBottom":"15px"}} size={"lg"}>
             In the Spotlight: Tripoto Creators of the Month - September 2022
           </Heading>
           <p style={{"marginBottom":"10px"}}>

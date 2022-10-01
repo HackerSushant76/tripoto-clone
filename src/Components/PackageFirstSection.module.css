@@ -1,0 +1,45 @@
+.IstSection {
+    /* border: 1px solid red; */
+    width: 63%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.IstSection>div {
+    width: 100%;
+    /* border: 1px solid green; */
+    /* height: 300px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 35px;
+    margin-top: 30px;
+    row-gap: 70px;
+}
+
+.IstSection>div>div {
+    /* width: 30%; */
+    /* border: 1px solid blue; */
+    height: 100%;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.Placebox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid purple; */
+}
+.BooknowButt{
+    background: white;
+    border: 1px solid teal;
+    color: teal;
+    
+}
+.title{
+    /* border: 1px solid purple; */
+    font-weight: bold;
+}
