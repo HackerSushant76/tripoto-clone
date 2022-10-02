@@ -46,7 +46,7 @@ const Homepage = () => {
               <Heading mb={"12px"} size="lg" color={"white"}>
               India's Largest Community of Travellers
               </Heading>
-              <Input
+              <Input value={result}
                 width={"80%"}
                 onChange={handleResult}
                 backgroundColor={"white"}
@@ -81,14 +81,14 @@ const Homepage = () => {
 
 export const Resulter = styled.div`
   position: absolute;
-  top: 5.73%;
-  left: 30%;
+  top: 100%;
+  left: 10%;
   max-height: ${({ limit }) => `${limit * 34}px`};
   border: 1px solid grey;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: white;
-  width: 40%;
+  width: 80%;
   overflow: scroll;
 `;
 
