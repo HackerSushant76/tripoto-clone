@@ -7,7 +7,7 @@ export const Places = () => {
   return (
     <div>
       <Box>
-          <Box width={"95%"} margin={"auto"} height={"auto"} >
+          <Box width={"85%"} margin={"auto"} height={"auto"} >
           <Heading marginBottom={"40px"} marginLeft={"5.5%"} size={"lg"}>Plan Your Next Trip Using Tripoto's Complete Destination Guides</Heading>
           <NextTrip/>
       </Box>
