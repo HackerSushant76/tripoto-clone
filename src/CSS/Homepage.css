@@ -67,16 +67,17 @@
 #traveller-flex {
   /* border: 1px solid; */
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   width: 90%;
   margin: auto;
   gap: 20px;
-  margin-bottom: 20%;
+  margin-bottom: 70px;
 }
 
 #traveller-flex > div {
-  border: 1px solid silver;
+  /* border: 1px solid silver; */
   border-radius: 5px;
+  /* padding: 10px; */
 }
 
 #traveller-flex > div img {
@@ -94,73 +95,105 @@
 #spot-flex {
   width: 75%;
   margin: auto;
+  margin-bottom: 70px;
 }
 
 #spot-flex-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid blue; */
-  margin-bottom: 4%;
-  gap: 20px;
-  justify-content: space-evenly;
+  grid-template-rows: auto;
+  gap: 30px;
 }
 
-#spot-flex-2 div {
-  /* width: 32%; */
-  /* margin: auto; */
-  /* border: 1px solid; */
-}
+
 
 #spot-flex-2 div img {
-    border-radius: 5px;
-    height: 450px;
+  border-radius: 5px;
+  height: 95%;
+  width: 100%;
 }
-
 
 /* Carousel */
 
+.carousel-wrapper {
+  width: 100%;
+  height: auto;
+}
 
+.content-div img {
+  height: 170px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#carousel-parent {
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+
+.content-div > h5 {
+  font-size: 13px;
+  color: rgb(215, 143, 9);
+}
+
+.content-div > h4 {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+
+
+.carousel-wrapper-country img {
+  height: 320px;
+  border-radius: 5px;
   
-  .carousel-wrapper  {
-    width: 100%;
-    height: 400px;
-  }
-  
-    
-  .content-div img{
-    height: 170px;
-    width: 100%;
-    border-radius: 5px;
-  }
+}
 
-  
+.rec.rec-arrow {
+  background-color: white;
+  font-size: 14px;
+  display: block;
+  margin: auto;
+  /* width: 10px; */
+  /* border: 1px solid red; */
+}
 
-  .carousel-wrapper-country img{
+.rec.rec-arrow:hover {
+  background: rgb(164, 209, 249);
+}
 
-    height: 320px;
-    border-radius: 5px;
-  }
+#suggestion::-webkit-scrollbar {
+  display: none;
+}
 
-  .rec.rec-arrow{
-    background-color: white;
-    font-size: 14px;
-    display: block;
-    margin: auto;
-    
-  }
-  
-
-  .rec.rec-arrow:hover{
-    background: rgb(164, 209, 249);
+@media all and (min-width: 100px) and (max-width: 320px) {
+  #home1_A,
+  #spot-flex-2,
+  #tour-flex,
+  #traveller-flex {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
   }
 
-  
-
-  @media all and (min-width:100px)  and (max-width:320px){
-
-    #home1_A, #spot-flex-2,#tour-flex,#traveller-flex{
-      grid-template-columns: repeat(1, 1fr);
-
-    }
-    
+  .content-div > h5 {
+    font-size: 10px;
   }
+
+  .content-div > h4 {
+    font-size: 12px;
+  }
+
+  #carousel-parent > h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* #spot-flex img{
+
+  } */
+
+  #middlepart_p{
+    font-size: 16px;
+  }
+}

@@ -15,7 +15,7 @@ const CarouselOne = (props) => {
             <Heading as={"h5"} size={"xs"} style={{"marginBottom":"10px"}} >
                 {"GO STOPS"}
             </Heading>
-            <Heading as={"h4"} style={{"fontSize":"18px"}} >
+            <Heading as={"h4"} size={"lg"} >
                 {para}
             </Heading>
         </Box>

@@ -8,7 +8,6 @@ import TripCarousel from "./TripCaraousel";
 import TypeOfTraveller from "./TypeOfTraveller";
 
 const Home_1 = () => {
-
   return (
     <div>
       <Box id="home1_A">
@@ -37,49 +36,38 @@ const Home_1 = () => {
           />
         </Box>
       </Box>
-      {/* partnership caraousel  */}
+
       <br />
       <br />
-      <Box width={"85%"} margin={"auto"} height={"350px"} >
+      <Box id="carousel-parent">
+        <Heading as="h3" marginBottom={"1%"} marginLeft={"5.5%"} size={"lg"}>
+          In the SpotLight : Partnerships
+        </Heading>
         <PartnershipCaraousel />
       </Box>
-      <br />
-      <br />
-
-      {/* Second Carousel */}
-
-      <Box width={"85%"} margin={"auto"} height={"350px"} >
-        <TripCarousel/>
+      <Box id="carousel-parent">
+        <Heading as="h3" marginBottom={"1%"} marginLeft={"5.5%"} size={"lg"}>
+          Find Best Places to Visit in India in October & November{" "}
+        </Heading>
+        <TripCarousel />
       </Box>
-      <br />
-      <br />
-
-      {/* TOURISM */}
-
-      <Tourism />
-      <br />
-      <br />
-
-      {/* Third Carousel*/}
+    
+          <Tourism />
+    <br />
+    <br />
+      <Box id="carousel-parent">
+        <Heading as="h3" marginBottom={"1%"} marginLeft={"5.5%"} size={"lg"}>
+          Plan You Next International Trip During October & November
+        </Heading>
+        <IndiaCarousel />
+      </Box>
+      <Box id="carousel-parent">
+        <Heading as="h3" marginBottom={"1%"} marginLeft={"5.5%"} size={"lg"}>
+          Check Out Best Hotels and Properties for Every Type of Traveller
+        </Heading>
+        <TypeOfTraveller />
+      </Box>
       
-      <br />
-      <Box width={"85%"} margin={"auto"} height={"350px"} >
-      <Heading marginBottom={"1%"} marginLeft={"5.5%"} size={"lg"}>
-        Plan You Next International Trip During October & November
-      </Heading>
-        <IndiaCarousel/>
-      </Box>
-      <br />
-      <br />
-      <br />
-      <Box width={"85%"} margin={"auto"} height={"350px"} >
-      <Heading  marginBottom={"1%"} marginLeft={"5.5%"} size={"lg"}>
-        Check Out Best Hotels and Properties for Every Type of Traveller
-      </Heading>
-      <TypeOfTraveller />
-      </Box>
-      <br />
-      <br />
       <Home2 />
     </div>
   );

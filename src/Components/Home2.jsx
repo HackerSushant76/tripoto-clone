@@ -5,7 +5,6 @@ import { SpotLight } from './SpotLight'
 const Home2 = () => {
   return (
     <div>
-        {/* Tour Caraousel */}
         <SpotLight/>
         <Places/>
     </div>
