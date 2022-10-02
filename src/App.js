@@ -16,9 +16,11 @@ function App() {
     }
   };
   useEffect(() => {
-    changeNav();
+    window.addEventListener("resize",changeNav)
+
+    // return window.removeEventListener("resize",changeNav)
   }, []);
-  console.log("ham", ham);
+  // console.log("ham", ham);
   return (
     <div className="App">
       {ham ? <HamburgerMenu /> : <Navbar />}

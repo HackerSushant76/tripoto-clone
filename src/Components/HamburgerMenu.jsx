@@ -1,5 +1,5 @@
 import {
-    Avatar,
+  Avatar,
   Box,
   Button,
   Drawer,
@@ -48,15 +48,22 @@ function HamburgerMenu() {
 
   return (
     <>
-      <Button
-        onClick={onOpen}
-        position="absolute"
-        top="10px"
-        left={"10px"}
-        zIndex={100}
-      >
-        <GiHamburgerMenu size={"sm"} />
-      </Button>
+      <Box display={"flex"} justifyContent="space-between" padding={"10px"} backgroundColor="#2f9bdb">
+        <NavLink to="/">
+          <Image src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg" />
+        </NavLink>
+        <Button
+          onClick={onOpen}
+          // position="absolute"
+          // top="10px"
+          // left={"10px"}
+          zIndex={100}
+          bgColor="transparent"
+        >
+          <GiHamburgerMenu size={"sm"} color="white" />
+        </Button>
+      </Box>
+
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent bgColor="#2f9bdb">
@@ -65,8 +72,15 @@ function HamburgerMenu() {
               <Image src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg" />
             </NavLink>
           </DrawerHeader>
-          <DrawerBody display="flex" flexDirection="column" gap="20px" color={"white"}>
-            <NavLink to="/inspiration/singapore">Visit Singapore</NavLink>
+          <DrawerBody
+            display="flex"
+            flexDirection="column"
+            gap="20px"
+            color={"white"}
+          >
+            <NavLink to="/inspiration/singapore" isOpen={onClose}>
+              Visit Singapore
+            </NavLink>
             <NavLink to="inspiration/beach">Beaches</NavLink>
             <NavLink to="/packages">Packages</NavLink>
             <Box cursor="pointer" display="flex" alignItems={"center"}>
