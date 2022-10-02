@@ -24,7 +24,7 @@ function Footer() {
               </Box>
             </Box>
             <Box>
-              <VStack mt="10px" align='stretch'>
+              <VStack mt="20px" align='stretch'>
                 <Box fontWeight="500" fontSize="14px">About Tripoto</Box>
                 <Box h="14px" cursor="pointer" fontSize="12px">How It Works</Box>
                 <Box h="14px" cursor="pointer" fontSize="12px">FAQ’s</Box>
@@ -35,7 +35,7 @@ function Footer() {
               </VStack> 
             </Box>
             <Box>
-            <VStack mt="10px" align='stretch'>
+            <VStack mt="20px" align='stretch'>
                 <Box fontWeight="500" fontSize="14px">Products</Box>
                 <Box h="14px" cursor="pointer" fontSize="12px">Tour Packages</Box>
                 <Box h="14px" cursor="pointer" fontSize="12px">Travel Guides</Box>
@@ -48,7 +48,7 @@ function Footer() {
               </VStack>
             </Box>
             <Box>
-            <VStack mt="10px" align='stretch'>
+            <VStack mt="20px" align='stretch'>
                 <Box  fontWeight="500" fontSize="14px">Important Travel Links</Box>
                 <Box h="14px" cursor="pointer" fontSize="12px">Goa Tourism</Box>
                 <Box h="14px" cursor="pointer" fontSize="12px">Dubai Tourism</Box>
@@ -61,7 +61,7 @@ function Footer() {
               </VStack>
             </Box>
             <Box>
-              <VStack mt="10px" align='stretch'>
+              <VStack mt="20px" align='stretch'>
                 <Box fontWeight="500" fontSize="14px">Partner Programs</Box>
                 <Box h="14px" cursor="pointer" fontSize="12px">Buy Travel Leads</Box>
                 <Box h="14px" cursor="pointer" fontSize="12px">Partner With Us</Box>

@@ -8,6 +8,7 @@ import axios from "axios";
 import {GoLocation } from "react-icons/go";
 import { Button } from "@chakra-ui/react";
 import {Link} from "react-router-dom";
+import "../CSS/Homepage.css"
 
 
 export default function Middle6Part() {
@@ -46,12 +47,12 @@ export default function Middle6Part() {
   return (
     <div >
      
-      <div style={{ position: "relative",width:"90%",margin:"auto",marginBottom:'30px' }}>
-      <p style={{fontSize:"30px",fontWeight:"700",marginTop:"20px",textAlign:"start",paddingLeft:"4%",marginBottom:"20px"}}>Travel and Learn with Tripoto's Mindful Retreats</p>
+      <div style={{ position: "relative",width:"80%",margin:"auto",marginBottom:'30px' }}>
+      <p id="middlepart_p" style={{fontSize:"30px",fontWeight:"700",marginTop:"20px",textAlign:"start",paddingLeft:"4%",marginBottom:"20px"}}>Travel and Learn with Tripoto's Mindful Retreats</p>
         <Carousel responsive={responsive}>  
             
             {data.map((item)=>(
-                <div style={{height:"50%",width:"80%",margin:"auto"}} key={item.id}>
+                <div style={{width:"80%",margin:"auto"}} key={item.id}>
                     <img  style={{borderRadius:"5%",height:"100%",width:"100%"}} src={item.img} alt="" />
                     <p style={{color:"green",textAlign:"start"}}>Package</p>
                   <p style={{fontWeight:"700",marginTop:"5px",textAlign:"start",color:"black",fontSize:"17px"}}>{item.title}</p>
