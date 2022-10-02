@@ -18,13 +18,13 @@ Firstly let’s know about Tripto. Tripoto is a travel Booking website, for prov
 
 ## Tech & Tools Used :
 #### Tripoto (Original Website).
-#### For Frontend : HTML5, CSS3, Javascript, JS6, ReactJS.
-#### For database: Json Server (Heroku).
-#### Chakra UI (UI Styling Library).
-#### For authentication: Google firebase authentication.
+#### For Frontend : `HTML5`, `CSS3`, `Javascript`, `ES6`, `ReactJS`.
+#### For database: `Json-server` (Heroku).
+#### `Chakra UI` (UI Styling Library).
+#### For authentication: Google `firebase` authentication.
 
 ## Run Code Locally
-npm install
-npm start
+- npm install
+- npm start
 
 ## Deployed Link :https://rct211-tripoto-clone.netlify.app/
