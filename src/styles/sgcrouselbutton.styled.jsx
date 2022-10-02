@@ -8,6 +8,7 @@ export const CrouselButtonWrapper = styled.div`
   font-size:38px;
  }
   img {
+    cursor:pointer;
     margin-top:30px;
     align-items:center;
     height:65px;

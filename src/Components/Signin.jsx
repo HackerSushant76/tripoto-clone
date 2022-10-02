@@ -101,7 +101,7 @@ function Signin() {
               </Button>
               {/* <Button onClick={onClose}>Cancel</Button> */}
             </ModalFooter>
-            <Box textAlign="center" fontSize="13px" display="flex" alignItems={"center"} gap="5px" justifyContent={"center"}>Don't have an account? <Signup /></Box>
+            <Box  textAlign="center" fontSize="13px" display="flex" alignItems={"center"} gap="5px" justifyContent={"center"}>Don't have an account? <Signup/></Box>
             <br />
           </ModalContent>
             
