@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import SgVideo from "./SgVideo";
 import SGWebseries from "./SGWebseries"
 import SGArticles from "./SGArticles";
@@ -14,7 +14,9 @@ import Masterimage from "./Masterimage";
 import SGSocial from "./SGSocial";
 import { SingaporeWrapper } from "../../styles/singapore.styled";
 import BorderedCrousel from "./BorderedCrousel";
+import { ShowContext } from "../../Context/ShowContext";
 const Singapore = () => {
+
 
   return (
     <>

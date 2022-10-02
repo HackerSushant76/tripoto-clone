@@ -17,50 +17,40 @@ import { Link, NavLink } from "react-router-dom";
 import { ShowContext } from "../Context/ShowContext";
 import styles from "./Navbar.module.css";
 import Signin from "./Signin";
-import Signup from "./Signup";
 import { signOut, onAuthStateChanged } from "firebase/auth";
 
 import { auth } from "../firebase-config";
 export function Navbar() {
- 
   const [color, setColor] = useState(false);
   const { show, setShow } = useContext(ShowContext);
-  const [avatar,setAvatar]=useState("")
-  const [avatarName,setAvatarName]=useState("")
+  const [avatar, setAvatar] = useState("");
+  const [avatarName, setAvatarName] = useState("");
   const [email, setEmail] = useState("");
   const { setIsAuth } = useContext(ShowContext);
 
-
   onAuthStateChanged(auth, (currentUser) => {
     setEmail(currentUser.email);
-    setAvatarName(currentUser.displayName)
-    setAvatar(currentUser.photoURL)
+    setAvatarName(currentUser.displayName);
+    setAvatar(currentUser.photoURL);
     setIsAuth(true);
   });
 
-
- 
-    let name = email.split("@");
-    name = name[0].toUpperCase();
-
- 
+  let name = email.split("@");
+  name = name[0].toUpperCase();
 
   function logoutUser() {
     signOut(auth).then((res) => {
       setEmail("");
       setAvatarName("");
-      setAvatar("")
+      setAvatar("");
       setIsAuth(false);
     });
   }
 
-
   const changeColor = () => {
     if (window.scrollY > 100) {
-      setColor(true);
       setShow(true);
     } else {
-      setColor(false);
       setShow(false);
     }
   };
@@ -68,11 +58,7 @@ export function Navbar() {
   useEffect(() => {
     window.addEventListener("scroll", changeColor);
   }, []);
-   
   return (
-
-    
-
     <Box
       id={styles.navbar}
       style={
@@ -82,11 +68,14 @@ export function Navbar() {
       }
     >
       <Box>
-        <NavLink to="/"><Image src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg"/></NavLink>
+        <NavLink to="/">
+          <Image src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg" />
+        </NavLink>
       </Box>
       <Box>
         {show && (
           <Input
+            className={styles.navSearch}
             transition="all 0.5s ease-out"
             bg="white"
             placeholder="Search for itineraries, destinations, hotels or activities"
@@ -96,24 +85,45 @@ export function Navbar() {
         )}
       </Box>
       <Box>
-        {/* <NavLink to="/inspirations"> */}
         <Menu>
-          <MenuButton as={Box}>Inspiration</MenuButton>
-          <MenuList color="black" width="30px" fontSize="14px">
-            <MenuItem><NavLink to="/inspiration/singapore">Visit Singapore</NavLink></MenuItem>
-            <MenuItem><NavLink to="inspiration/beach">Beaches</NavLink></MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem>
+          <MenuButton as={Box}>Inspiration </MenuButton>
+          <MenuList color="black" fontSize="14px">
+            <MenuItem >
+              <NavLink to="/inspiration/singapore">Visit Singapore</NavLink>
+            </MenuItem>
+            <MenuItem>
+              <NavLink to="inspiration/beach">Beaches</NavLink>
+            </MenuItem>
+            <MenuItem>Mountain</MenuItem>
+            <MenuItem>Heritage</MenuItem>
+            <MenuItem>Weekend Guide</MenuItem>
+            <MenuItem>Upcoming Festivals</MenuItem>
+            <MenuItem>Honeymoon Packages</MenuItem>
+            <MenuItem>Wildlife Tourism</MenuItem>
+            <MenuItem>Roadlife Trips</MenuItem>
+            <MenuItem>Getaways Guide</MenuItem>
+            <MenuItem>Luxury Travel</MenuItem>
+            <MenuItem>Explore More</MenuItem>
           </MenuList>
         </Menu>
-        {/* </NavLink> */}
-        <NavLink to="/forum">Forum</NavLink>
+        <NavLink to="#">Forum</NavLink>
         <NavLink to="/packages">Packages</NavLink>
         <NavLink to="/publish">Publish trip</NavLink>
-        <Box cursor= "pointer" display="flex" alignItems={"center"} >
-       {avatarName || name ? <div> <Avatar src={avatar} w="28px" h="28px"  mr="3px"/> {avatarName || name}<button style={{marginLeft:"10px"}} onClick={logoutUser}>{" "}Log Out</button> </div>: <Signin />}
-       </Box>
+        <Box cursor="pointer" display="flex" alignItems={"center"}>
+          {avatarName || name ? (
+            <div>
+              {" "}
+              <Avatar src={avatar} w="28px" h="28px" mr="3px" />{" "}
+              {avatarName || name}
+              <button style={{ marginLeft: "10px" }} onClick={logoutUser}>
+                {" "}
+                Log Out
+              </button>{" "}
+            </div>
+          ) : (
+            <Signin />
+          )}
+        </Box>
       </Box>
     </Box>
   );

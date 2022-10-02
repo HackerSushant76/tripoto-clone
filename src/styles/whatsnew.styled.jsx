@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const MainWhatsnew = styled.div`
   width: 100%;
+  cursor:pointer;
 `;
 export const SGWhatsnew = styled.div`
   margin-top: 60px;

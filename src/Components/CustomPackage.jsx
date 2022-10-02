@@ -4,7 +4,7 @@ import styles from "./CustomPackage.module.css";
 
 function CustomPackage() {
   return (
-    <Box w="63%" m={"auto"} className={styles.CustomPackage}>
+    <Box className={styles.CustomPackage}>
       <Heading size="lg">Customizable Tour Packages</Heading>
       <Text fontSize="13px">
         Need help in getting a perfect travel experience according to your need?

@@ -1,9 +1,7 @@
-#navbar{
+#navbar {
     display: flex;
-    /* background-color: #2f9bdb; */
-    background-color: transparent;
     color: white;
-    justify-content:space-between;
+    justify-content: space-between;
     padding-left: 30px;
     padding-right: 50px;
     padding-top: 5px;
@@ -14,12 +12,19 @@
     font-size: 14px;
     z-index: 99;
 }
-#navbar>div{
+
+#navbar>div {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-/* .navcol{
-    background-color: #2f9bdb;
-    transition-duration: 1sec;
-} */
+
+.navSearch {
+    margin-left: -200px;
+    border-radius: 2px;
+}
+@media (max-width) {
+    .navSearch {
+        display: none;
+    }
+}

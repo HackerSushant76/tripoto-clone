@@ -23,13 +23,14 @@ export const SGShopCard = styled.div`
   justify-content: space-between;
   @media (max-width: 1000px) {
     flex-direction: column;
-    border: 1px solid red;
+  
   }
 `;
 
 export const SGShopCardIndividual = styled.div`
   width: 355px;
   margin-right: 15px;
+  cursor:pointer;
   h3{
     font-size:18px;
     font-weight:700;
@@ -40,7 +41,7 @@ export const SGShopCardIndividual = styled.div`
     border-radius: 5px;
   }
   @media (max-width: 1000px) {
-    border: 1px solid green;
+
     width: 100%;
     height: auto;
     img {

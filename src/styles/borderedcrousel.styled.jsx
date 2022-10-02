@@ -1,6 +1,7 @@
 import styled from "styled-components"
 export const BorderedCrouselWrapper = styled.div`
   margin-top: 40px;
+  cursor:pointer;
   h1 {
     margin-bottom: 4px;
     font-size: 28px;

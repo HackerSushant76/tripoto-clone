@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Box, Input, Text } from "@chakra-ui/react";
 import React, { useContext, useEffect, useState } from "react";
 import { ShowContext } from "../Context/ShowContext";
@@ -37,16 +38,35 @@ useEffect(()=>{
 
 },[result])
 // console.log(data)
+=======
+import { Box, Button, Heading, Input } from "@chakra-ui/react";
+import React, { useContext } from "react";
+import { ShowContext } from "../Context/ShowContext";
+import "../CSS/Homepage.css";
+import Footer from "./Footer";
+import Home1 from "./Home1";
+import Middle6Part from "./Middle6Part";
+import luftansa from "../Images/image1.png";
+import { AiOutlineSearch } from "react-icons/ai";
+
+const Homepage = () => {
+  const { show, setShow } = useContext(ShowContext);
+>>>>>>> 9d8cc47f7b26e52a8d42a589a0bc035cb656734f
 
   return (
     <div>
       <Box>
+<<<<<<< HEAD
         <Box position={"realtive"} width="100%">
+=======
+        <Box position={"relative"} width="100%">
+>>>>>>> 9d8cc47f7b26e52a8d42a589a0bc035cb656734f
           <img
             id="banner"
             src="https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg"
             alt=""
           />
+<<<<<<< HEAD
           {!show && (
             <Input
               onChange={handleResult}
@@ -66,6 +86,34 @@ useEffect(()=>{
           })}
        </Resulter>
          
+=======
+          <Box
+            position={"absolute"}
+            top="35%"
+            width={"40%"}
+            left={"30%"}
+            textAlign="center"
+          >
+            <Heading size="lg" color="white" mb="10px">
+              India's Largest Community of Travellers
+            </Heading>
+            {!show && (
+              <Box>
+                <Input
+                  width="500px"
+                  height="45px"
+                  fontSize="12px"
+                  backgroundColor={"white"}
+                  placeholder="Search for itineraries, destinations, hotels or activities"
+                  position="relative"
+                />
+                <Button position="absolute" right="8%" bg="none" _hover="none">
+                  <AiOutlineSearch color="grey" />
+                </Button>
+              </Box>
+            )}
+          </Box>
+>>>>>>> 9d8cc47f7b26e52a8d42a589a0bc035cb656734f
         </Box>
       </Box>
       <br />
@@ -78,6 +126,7 @@ useEffect(()=>{
   );
 };
 
+<<<<<<< HEAD
 
 const Resulter= styled.div`
 position: absolute;
@@ -92,4 +141,6 @@ width: 40%;
   overflow: scroll;
 `
 
+=======
+>>>>>>> 9d8cc47f7b26e52a8d42a589a0bc035cb656734f
 export default Homepage;
