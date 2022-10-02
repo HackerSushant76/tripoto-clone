@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const WebseriesWrapper = styled.div`
    margin-top:50px;
    margin-bottom:50px;
+   cursor:pointer;
  
   h1 {
     

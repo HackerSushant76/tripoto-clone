@@ -88,7 +88,7 @@ export function Navbar() {
         <Menu>
           <MenuButton as={Box}>Inspiration </MenuButton>
           <MenuList color="black" fontSize="14px">
-            <MenuItem>
+            <MenuItem >
               <NavLink to="/inspiration/singapore">Visit Singapore</NavLink>
             </MenuItem>
             <MenuItem>

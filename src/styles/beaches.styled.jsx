@@ -99,7 +99,6 @@ export const VlogWrapper = styled.div`
   @media (max-width: 1000px) {
     flex-direction: column;
 
-    border: 1px solid red;
     div {
       width: 100%;
     }

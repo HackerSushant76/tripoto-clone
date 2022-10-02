@@ -16,10 +16,8 @@ import { SingaporeWrapper } from "../../styles/singapore.styled";
 import BorderedCrousel from "./BorderedCrousel";
 import { ShowContext } from "../../Context/ShowContext";
 const Singapore = () => {
-  const {show,setShow} = useContext(ShowContext)
-  useEffect(()=>{
-    setShow(true)
-  },[])
+
+
   return (
     <>
     <SgVideo/>
