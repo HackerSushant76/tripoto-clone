@@ -8,7 +8,7 @@ const breakPoints = [
   { width: 450, itemsToShow: 2, itemsToScroll: 1 },
   { width: 600, itemsToShow: 3, itemsToScroll: 1 },
   { width: 768, itemsToShow: 4, itemsToScroll: 1 },
-  { width: 1200, itemsToShow: 5, itemsToScroll: 1 },
+  { width: 1200, itemsToShow: 4, itemsToScroll: 1 },
 ];
 
 const TopTravelCarousel = () => {

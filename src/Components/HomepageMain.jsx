@@ -49,6 +49,7 @@ useEffect(()=>{
           />
           {!show && (
             <Input
+            value={result}
               onChange={handleResult}
               position={"absolute"}
               top="5%"
