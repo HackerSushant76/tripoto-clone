@@ -27,4 +27,4 @@ Firstly let’s know about Tripto. Tripoto is a travel Booking website, for prov
 npm install
 npm start
 
-## Deployed Link :
+## Deployed Link :https://rct211-tripoto-clone.netlify.app/
