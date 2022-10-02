@@ -44,7 +44,7 @@ const Homepage = () => {
           {!show && (
             <Box position={"absolute"}>
               <Heading mb={"12px"} size="lg" color={"white"}>
-                Exclusive Tours & Holiday Packages
+              India's Largest Community of Travellers
               </Heading>
               <Input
                 width={"80%"}
