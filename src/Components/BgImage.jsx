@@ -5,7 +5,7 @@ import styles from "./BgImage.module.css";
 function BgImage() {
   return (
     <Box width="100%" position="relative">
-      <img id={styles.banner} src="packagesbgimage.jpg" alt="" />
+      <img id={styles.banner} src="https://cdn1.tripoto.com/media/filter/nxxl/img/311219/Image/1573737581_screen_shot_2019_11_14_at_6_46_59_pm.jpg" alt="" />
       <Box
         position={"absolute"}
         top="35%"
