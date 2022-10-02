@@ -51,7 +51,7 @@ const Home_1 = () => {
         </Heading>
         <TripCarousel />
       </Box>
-    
+    <br />
           <Tourism />
     <br />
     <br />

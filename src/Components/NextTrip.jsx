@@ -8,7 +8,7 @@ const breakPoints = [
   { width: 450, itemsToShow: 2, itemsToScroll: 2 },
   { width: 600, itemsToShow: 3, itemsToScroll: 3 },
   { width: 768, itemsToShow: 4, itemsToScroll: 4 },
-  { width: 1200, itemsToShow: 4, itemsToScroll: 4},
+  { width: 1200, itemsToShow: 4, itemsToScroll: 1},
 ];
 
 const NextTrip = () => {
