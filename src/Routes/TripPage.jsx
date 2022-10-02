@@ -15,7 +15,7 @@ import SimpleImageSlider  from "react-simple-image-slider";
 // import {AppContext} from "../Context/AppContext";
 import {
     FormControl,
-    FormLabel,Button,FormHelperText,Input,Spacer,Select,Stack,Checkbox,GridItem} from '@chakra-ui/react'
+    FormLabel,Button,FormHelperText,Input,Spacer,Select,Stack,Checkbox} from '@chakra-ui/react'
 import FaqSection from "./FaqSection";
 import Middle6Part from "../Components/Middle6Part";
 import {useNavigate} from "react-router-dom";
@@ -38,7 +38,9 @@ export default function TripPage(){
   const handleChange=(e)=> {
     const { name:key,value} =e.target;
     setFormState({ ...formState,[key]:value})
+    // console.log(formState.option2)
   }
+  
 
   const handleSubmit=(e)=>{
    fillForm1(formState)
@@ -46,7 +48,7 @@ export default function TripPage(){
     
    naviagte(`/booking`);
   }
-      useEffect(()=>{
+    useEffect(()=>{
         getData();
     },[id])
 
@@ -76,9 +78,11 @@ function getData(){ axios.get(`https://avdhoot-fake-api.herokuapp.com/bookhotels
 
     return(
       <div>
-        <Navbar/>
-        <div style={{marginTop:"30px",display:"flex",width:"80%",margin:"auto",justifyContent:"space-between"}}>
-        <div style={{width:"60%"}}>
+       
+        <Navbar/> 
+    
+        <div style={{marginTop:"150px",display:"flex",width:"80%",margin:"auto",justifyContent:"space-between"}}>
+         <div style={{width:"60%"}}>
              <SimpleImageSlider showBullets={true}
             showNavs={true} images={images} height="500px" width="750px" />
            <p className={styles.head}>Embrace Minimalistic Community Life & Learn A Traditional Martial Art | Beyond Community, Auroville</p>
@@ -96,10 +100,10 @@ function getData(){ axios.get(`https://avdhoot-fake-api.herokuapp.com/bookhotels
          </div>
          <div className={styles.belowPrice}>
          <p>Location</p>
-        <p>{data.place}</p>
+         <p>{data.place}</p>
          </div>
-        <p style={{color:"teal"}} className={styles.belowPrice}>Highlights</p>
-        <div className={styles.highLightBox}>
+         <p style={{color:"teal"}} className={styles.belowPrice}>Highlights</p>
+         <div className={styles.highLightBox}>
            <div>
              <div><FaHamburger/></div>
              <div>Meals</div>
@@ -247,7 +251,7 @@ function getData(){ axios.get(`https://avdhoot-fake-api.herokuapp.com/bookhotels
         </FormControl>
          <div style={{display:"flex",justifyContent:'space-between',marginTop:"20px"}}>
             <p style={{fontSize:"20px",fontWeight:"600"}}>Amount</p>
-            <p style={{fontSize:"20px",fontWeight:"600"}}> <p style={{fontSize:"13px",display:"inline"}}> Starting from</p> ₹ 30000</p>
+            <p style={{fontSize:"20px",fontWeight:"600"}}> <p style={{fontSize:"13px",display:"inline"}}> Starting from</p> ₹ {Number(data.cost)*Number(formState.option2)}</p>
          </div>
          <p  style={{marginTop:"20px"}}>Taxes and discounts are calculated next.</p>
          <Checkbox required style={{marginTop:"20px"}} colorScheme='green' >
