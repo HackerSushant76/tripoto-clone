@@ -20,7 +20,7 @@ Firstly let’s know about Tripto. Tripoto is a travel Booking website, for prov
 #### Tripoto (Original Website).
 #### For Frontend : `HTML5`, `CSS3`, `Javascript`, `ES6`, `ReactJS`.
 #### For database: `Json-server` (Heroku).
-#### `Chakra UI` (UI Styling Library).
+#### `Chakra UI` and `Styled Components` (UI Styling Library).
 #### For authentication: Google `firebase` authentication.
 
 ## Run Code Locally
