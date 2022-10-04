@@ -1,5 +1,5 @@
 
-# Tripoto-Clone
+# Tripoto-Clone :  [Deployed Link](https://rct211-tripoto-clone.netlify.app/)
 
 
 This is a collaborative Project from Masai School in the Construct Week. We are 5 members of the team:
@@ -27,4 +27,4 @@ Firstly let’s know about Tripto. Tripoto is a travel Booking website, for prov
 - npm install
 - npm start
 
-## Deployed Link :https://rct211-tripoto-clone.netlify.app/
+
